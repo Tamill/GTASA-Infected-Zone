@@ -1,0 +1,4722 @@
+// This file was decompiled using SASCM.ini published on 2021-01-30
+{$CLEO .cs}
+
+script_name 'TAMAI' 
+0000: NOP 
+jump @TAMAI_33378 
+0662: printstring "CLEO BY TAMCL" 
+0662: printstring "EMAIL: NEWTMACL@FOXMAIL.COM OR NEWTAMC@163.COM" 
+0662: printstring "CLEO BY TAMCL" 
+0662: printstring "EMAIL: 1298878474@QQ.COM OR NEWTAMC@163.COM" 
+0662: printstring "Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½AI THE COMBAT ARTIFICIAL INTELLIGENCE" 
+0662: printstring "Ï¯½Ï¯½ÏµÍ²Ï¯½Ï¯½TAMCLÏ¯½Ï¯½Ï¯½Ï¯½ THE SYSTEM MADE BY TAMCL" 
+0662: printstring "Ï¯½ÎªÏ¯½Ï¯½Ë²Ï¯½Ï¯½Ï¯½Î¥Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Ï¯½Þ¨Ï¯½/×ªÏ¯½Ï¯½ ANYONE WITHOUT PERMISSION CAN NOT MODIFY OR REPRINT." 
+0662: printstring "QQ: 1298878474" 
+
+:TAMAI_439
+if and
+  $411 > 0.0 
+   not $411 >= 10.0 
+jf @TAMAI_484 
+$412 += 1 
+$413 += 1 
+
+:TAMAI_484
+gosub @TAMAI_21180 
+gosub @TAMAI_21415 
+gosub @TAMAI_22423 
+gosub @TAMAI_25065 
+
+:TAMAI_512
+gosub @TAMAI_7454 
+wait 0 
+if 
+   Player.Defined($PLAYER_CHAR)
+jf @TAMAI_512 
+if 
+056D:   actor $PLAYER_ACTOR defined 
+jf @TAMAI_512 
+gosub @TAMAI_21180 
+gosub @TAMAI_16584 
+gosub @TAMAI_21415 
+gosub @TAMAI_32494 
+gosub @TAMAI_21180 
+if 
+gosub @TAMAI_9898 
+jf @TAMAI_512 
+gosub @TAMAI_20495 
+gosub @TAMAI_20815 
+gosub @TAMAI_20860 
+if 
+   not $415 == 1 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_23288 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_23697 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_24303 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_15729 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_6512 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_8542 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_8614 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_9079 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_6372 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_5960 
+jf @TAMAI_512 
+gosub @TAMAI_19563 
+jump @TAMAI_19612 
+
+:TAMAI_841
+jump @TAMAI_16741 
+
+:TAMAI_848
+jump @TAMAI_19026 
+jump @TAMAI_19794 
+
+:TAMAI_862
+if 
+gosub @TAMAI_19519 
+jf @TAMAI_1733 
+if 
+  5@ == -2 
+jf @TAMAI_905 
+02A9: set_actor 20@ immune_to_nonplayer 0 
+
+:TAMAI_905
+if 
+gosub @TAMAI_2702 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_32454 
+jf @TAMAI_1563 
+if 
+gosub @TAMAI_4942 
+jf @TAMAI_512 
+gosub @TAMAI_1859 
+if 
+001D:   $TEMPVAR_FLOAT_1 > $TEMPVAR_FLOAT_2 // (int) 
+jf @TAMAI_1556 
+gosub @TAMAI_1882 
+if and
+   not Actor.Driving(0@)
+8025:   not  10@ > $TEMPVAR_FLOAT_3 // (float) 
+jf @TAMAI_1495 
+if 
+gosub @TAMAI_29414 
+jf @TAMAI_1449 
+if 
+0104:   actor 0@ near_actor 20@ radius 60.0 60.0 60.0 sphere 0 
+jf @TAMAI_1435 
+if 
+gosub @TAMAI_10556 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_13291 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_12802 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_20249 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_19879 
+jf @TAMAI_512 
+if 
+gosub @TAMAI_4253 
+jf @TAMAI_512 
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+jf @TAMAI_1421 
+062E: get_actor 0@ task 1506 status_store_to $TEMPVAR_FLOAT_2 // ret 7 if not found 
+062E: get_actor 0@ task 1560 status_store_to $TEMPVAR_FLOAT_3 // ret 7 if not found 
+if or
+84A3:   not  $TEMPVAR_FLOAT_2 == 7 // == constant 
+84A3:   not  $TEMPVAR_FLOAT_3 == 7 // == constant 
+jf @TAMAI_1271 
+gosub @TAMAI_28206 
+
+:TAMAI_1271
+if 
+001D:   TIMERA > 27@ // (int) 
+jf @TAMAI_1421 
+0085: 27@ = TIMERA // (int) 
+27@ += 60 
+13@ = 40 
+get_char_player_is_targeting $TEMPVAR_FLOAT_3 $PLAYER_CHAR 
+if or
+   Actor.Animation(0@) == "HANDSUP"
+003B:   $TEMPVAR_FLOAT_3 == 0@ // (int) 
+003B:   20@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_1375 
+060B: set_actor 0@ decision_maker_to 32 
+jump @TAMAI_1382 
+
+:TAMAI_1375
+060B: set_actor 0@ decision_maker_to 1 
+
+:TAMAI_1382
+if 
+  3@ == -15 
+jf @TAMAI_1407 
+07DD: set_actor 0@ attack_rate 65 // previously known as temper_to 
+
+:TAMAI_1407
+gosub @TAMAI_4849 
+gosub @TAMAI_24687 
+
+:TAMAI_1421
+jump @TAMAI_512 
+jump @TAMAI_1442 
+
+:TAMAI_1435
+jump @TAMAI_1449 
+
+:TAMAI_1442
+jump @TAMAI_1488 
+
+:TAMAI_1449
+if 
+   not 13@ == 42 
+jf @TAMAI_1481 
+gosub @TAMAI_3420 
+jump @TAMAI_1488 
+
+:TAMAI_1481
+gosub @TAMAI_3640 
+
+:TAMAI_1488
+jump @TAMAI_1556 
+
+:TAMAI_1495
+if 
+  2@ == 4 
+jf @TAMAI_1556 
+if 
+gosub @TAMAI_3726 
+jf @TAMAI_512 
+13@ = 42 
+if 
+gosub @TAMAI_3857 
+jf @TAMAI_512 
+
+:TAMAI_1556
+jump @TAMAI_1726 
+
+:TAMAI_1563
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_1726 
+if 
+8104:   not actor 0@ near_actor 20@ radius 10.0 10.0 2.0 sphere 0 
+jf @TAMAI_1680 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset 0.0 0.0 0.0 
+13@ = 42 
+gosub @TAMAI_25143 
+jump @TAMAI_512 
+jump @TAMAI_1726 
+
+:TAMAI_1680
+07A5: AS_actor 0@ attack_actor 20@ time 6000 
+01BD: 19@ = current_time_in_ms 
+19@ += 3500 
+13@ = 40 
+07DD: set_actor 0@ attack_rate 1000 // previously known as temper_to 
+jump @TAMAI_512 
+
+:TAMAI_1726
+jump @TAMAI_1790 
+
+:TAMAI_1733
+if and
+   not 13@ == 152 
+   not 13@ == 39 
+   not 13@ == 155 
+   not 13@ == 156 
+   not 13@ == 157 
+jf @TAMAI_1790 
+13@ = 0 
+
+:TAMAI_1790
+jump @TAMAI_512 
+return 
+if 
+03CA:   object 29@ exists 
+jf @TAMAI_1829 
+0750: set_object 29@ visibility 0 
+jump @TAMAI_1857 
+
+:TAMAI_1829
+Object.Create(29@, 1318, 0, 0, 0)
+Object.KeepInMemory(29@, True)
+Object.CollisionDetection(29@, False)
+
+:TAMAI_1857
+return 
+
+:TAMAI_1859
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+0085: $TEMPVAR_FLOAT_2 = 19@ // (int) 
+$TEMPVAR_FLOAT_2 += 250 
+return 
+
+:TAMAI_1882
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+092E: get_water_height_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 ignore_waves 0 store_to 10@ 
+10@ += 0.25 
+return 
+
+:TAMAI_1921
+Car.StorePos(7@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_1 -= 7.0 
+$TEMPVAR_FLOAT_2 -= 7.0 
+$TEMPVAR_FLOAT_3 -= 7.0 
+Car.StorePos(7@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+$TEMPVAR_X_COORD -= -7.0 
+$TEMPVAR_Y_COORD -= -7.0 
+$TEMPVAR_Z_COORD -= -7.0 
+if 
+   not Car.Wrecked(7@)
+jf @TAMAI_2133 
+if and
+8356:   not explosion_type 3 in_cube_cornerA $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 cornerB $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+0356:   explosion_type -1 in_cube_cornerA $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 cornerB $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+jf @TAMAI_2133 
+$TEMPVAR_FLOAT_1 = Car.Health(7@)
+$TEMPVAR_FLOAT_1 -= 1 
+if 
+  $TEMPVAR_FLOAT_1 > 0 
+jf @TAMAI_2128 
+Car.Health(7@) = $TEMPVAR_FLOAT_1
+jump @TAMAI_2133 
+
+:TAMAI_2128
+020B: explode_car 7@ 
+
+:TAMAI_2133
+return 
+
+:TAMAI_2135
+0063: 0@ -= 2@ // (float) 
+0063: 1@ -= 3@ // (float) 
+0604: get_Z_angle_for_point 0@ 1@ store_to 6@ 
+cleo_return 1 6@ 
+
+:TAMAI_2170
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 7@ with_offset 0.0 0.0 0.0 
+Actor.StorePos(20@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+0063: $TEMPVAR_FLOAT_3 -= $TEMPVAR_Z_COORD // (float) 
+0097: make $TEMPVAR_FLOAT_3 absolute_float 
+050A: 8@ = distance_between_XYZ $TEMPVAR_X_COORD $TEMPVAR_X_COORD $TEMPVAR_Z_COORD and_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0073: $TEMPVAR_FLOAT_3 /= 8@ // (float) 
+0087: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_3 // (float) 
+0087: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_3 // (float) 
+0087: $TEMPVAR_FLOAT_1 = $TEMPVAR_FLOAT_3 // (float) 
+0087: $TEMPVAR_FLOAT_2 = $TEMPVAR_FLOAT_3 // (float) 
+0087: $TEMPVAR_FLOAT_3 = $TEMPVAR_FLOAT_3 // (float) 
+006B: $TEMPVAR_Y_COORD *= $TEMPVAR_FLOAT_3 // (float) 
+006B: $TEMPVAR_Y_COORD *= $TEMPVAR_FLOAT_3 // (float) 
+006B: $TEMPVAR_FLOAT_2 *= $TEMPVAR_FLOAT_3 // (float) 
+006B: $TEMPVAR_FLOAT_2 *= $TEMPVAR_FLOAT_3 // (float) 
+006B: 6@ *= $TEMPVAR_FLOAT_3 // (float) 
+006B: 6@ *= $TEMPVAR_FLOAT_3 // (float) 
+006B: 7@ *= $TEMPVAR_FLOAT_3 // (float) 
+006B: 7@ *= $TEMPVAR_FLOAT_3 // (float) 
+9@ /= 6.0 
+5@ *= 3.0 
+5@ /= 40.0 
+6@ *= 5.0 
+6@ /= 112.0 
+7@ *= 35.0 
+7@ /= 1152.0 
+005B: 8@ += 9@ // (float) 
+0087: 12@ = 8@ // (float) 
+005B: 8@ += 5@ // (float) 
+005B: 8@ += 12@ // (float) 
+8@ /= 2.0 
+return 
+Car.StorePos(7@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+Actor.StorePos($PLAYER_ACTOR, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+cleo_call @TAMAI_2135 4 $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+$TEMPVAR_FLOAT_1 = Car.Angle(7@)
+0063: $TEMPVAR_Z_COORD -= $TEMPVAR_FLOAT_1 // (float) 
+02F6: $TEMPVAR_FLOAT_2 = sine $TEMPVAR_Z_COORD // (float) 
+02F7: $TEMPVAR_FLOAT_3 = cosine $TEMPVAR_Z_COORD // (float) 
+$TEMPVAR_FLOAT_2 *= 7.0 
+$TEMPVAR_FLOAT_3 *= 7.0 
+gosub @TAMAI_2170 
+Car.StorePos(7@, $TEMPVAR_X_COORD, $TEMPVAR_X_COORD, $TEMPVAR_Z_COORD)
+Actor.StorePos($PLAYER_ACTOR, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+if 
+0025:   $TEMPVAR_FLOAT_3 > 10@ // (float) 
+jf @TAMAI_2659 
+8@ *= 1.0 
+0087: 17@ = 8@ // (float) 
+jump @TAMAI_2677 
+
+:TAMAI_2659
+8@ *= 1.0 
+0087: 17@ = 8@ // (float) 
+
+:TAMAI_2677
+0407: store_coords_to 8@ 9@ 10@ from_car 7@ with_offset 15@ 16@ 1.5 
+
+:TAMAI_2702
+if 
+   Actor.Driving(0@)
+jf @TAMAI_3413 
+7@ = Actor.CurrentCar(0@)
+if or
+   Car.Model(7@) == 432
+   Car.Model(7@) == 520
+jf @TAMAI_3413 
+if 
+   Car.Model(7@) == 432
+jf @TAMAI_2906 
+Actor.StorePos(20@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+Car.StorePos(7@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_FLOAT_3)
+0063: $TEMPVAR_FLOAT_1 -= $TEMPVAR_X_COORD // (float) 
+0063: $TEMPVAR_FLOAT_2 -= $TEMPVAR_Y_COORD // (float) 
+0604: get_Z_angle_for_point $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 store_to $TEMPVAR_Z_COORD 
+$TEMPVAR_FLOAT_1 = Car.Angle(7@)
+0086: 9@ = $TEMPVAR_Z_COORD // (float) 
+0063: $TEMPVAR_Z_COORD -= $TEMPVAR_FLOAT_1 // (float) 
+$TEMPVAR_Z_COORD /= 57.29578 
+9@ /= 57.29578 
+get_vehicle_pointer $TEMPVAR_FLOAT_2 7@ 
+$TEMPVAR_FLOAT_2 += 2380 
+write_memory $TEMPVAR_FLOAT_2 4 $TEMPVAR_Z_COORD 0 
+gosub @TAMAI_1921 
+
+:TAMAI_2906
+if 
+001D:   TIMERA > 27@ // (int) 
+jf @TAMAI_3413 
+if 
+gosub @TAMAI_29414 
+jf @TAMAI_3413 
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -4.5 4.5 
+0208: $TEMPVAR_Y_COORD = random_float_in_ranges -4.5 4.5 
+$TEMPVAR_X_COORD *= 1.6 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+005B: $TEMPVAR_FLOAT_2 += $TEMPVAR_Y_COORD // (float) 
+12@ = 0 
+
+:TAMAI_3020
+get_random_char_in_sphere_no_save_recursive $TEMPVAR_Z_COORD $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 15.0 1 1 
+if 
+   not $TEMPVAR_Z_COORD == -1 
+jf @TAMAI_3307 
+089F: get_actor $TEMPVAR_Z_COORD pedtype_to $TEMPVAR_X_COORD 
+089F: get_actor 0@ pedtype_to $TEMPVAR_Y_COORD 
+if 
+003B:   $TEMPVAR_X_COORD == $TEMPVAR_Y_COORD // (int) 
+jf @TAMAI_3307 
+7@ = Actor.CurrentCar(0@)
+if 
+   Car.Model(7@) == 432
+jf @TAMAI_3307 
+if 
+0104:   actor 0@ near_actor 20@ radius 60.0 60.0 60.0 sphere 0 
+jf @TAMAI_3300 
+0085: 27@ = TIMERA // (int) 
+27@ += 200 
+13@ = 40 
+7@ = Actor.CurrentCar(0@)
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -0.7 0.7 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+Car.StorePos(7@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+$TEMPVAR_Z_COORD += 2.5 
+06BC: create_M4_shoot_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD target $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 energy 40 
+058A: create_gun_flash_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+$TEMPVAR_Z_COORD = -1 
+
+:TAMAI_3300
+jump @TAMAI_3329 
+
+:TAMAI_3307
+12@ += 1 
+  12@ > 150 
+jf @TAMAI_3020 
+
+:TAMAI_3329
+if 
+   not $TEMPVAR_Z_COORD == -1 
+jf @TAMAI_3413 
+7@ = Actor.CurrentCar(0@)
+07D5: set_car 7@ velocity_in_direction_XYZ 0.1 0.0 0.1 rotation_velocitiesXY 0.0 0.0 unk 0.0 
+0085: 27@ = TIMERA // (int) 
+27@ += 6000 
+13@ = 40 
+
+:TAMAI_3413
+jump @TAMAI_24523 
+
+:TAMAI_3420
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if and
+   Actor.Dead(4@)
+   not Actor.Driving(0@)
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_3633 
+if 
+   not 13@ == 42 
+jf @TAMAI_3535 
+Actor.StorePos(20@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+0667: AS_actor 0@ aim_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 1200 ms 
+if 
+   not 13@ == 39 
+jf @TAMAI_3535 
+TIMERB = 0 
+13@ = 39 
+
+:TAMAI_3535
+if 
+  13@ == 39 
+jf @TAMAI_3633 
+if 
+  TIMERB > 3000 
+jf @TAMAI_3633 
+13@ = 42 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset 0.0 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_3633
+jump @TAMAI_24523 
+
+:TAMAI_3640
+if 
+  TIMERB > 0 
+jf @TAMAI_3719 
+13@ = 42 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset 0.0 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_3719
+jump @TAMAI_24523 
+
+:TAMAI_3726
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+092E: get_water_height_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 ignore_waves 0 store_to 10@ 
+10@ += 0.25 
+if 
+0025:   10@ > $TEMPVAR_FLOAT_3 // (float) 
+jf @TAMAI_3850 
+13@ = 42 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset 0.0 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+jump @TAMAI_24527 
+
+:TAMAI_3850
+jump @TAMAI_24523 
+
+:TAMAI_3857
+if and
+   Actor.Dead(4@)
+   Actor.Driving(0@)
+jf @TAMAI_4239 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_4232 
+if 
+8104:   not actor 0@ near_actor 20@ radius 15.0 15.0 15.0 sphere 0 
+jf @TAMAI_4034 
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+046C: $TEMPVAR_FLOAT_2 = car $TEMPVAR_FLOAT_1 driver 
+if 
+003B:   $TEMPVAR_FLOAT_2 == 0@ // (int) 
+jf @TAMAI_4027 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset 0.0 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_4027
+jump @TAMAI_4232 
+
+:TAMAI_4034
+if or
+   Actor.DrivingPlane(0@)
+   Actor.DrivingVehicleType(0@, 432)
+jf @TAMAI_4065 
+jump @TAMAI_24523 
+
+:TAMAI_4065
+if 
+   not Actor.Driving(20@)
+jf @TAMAI_4127 
+gosub @TAMAI_28206 
+0633: AS_actor 0@ exit_car 
+13@ = 40 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+jump @TAMAI_24527 
+jump @TAMAI_4232 
+
+:TAMAI_4127
+if 
+84A9:   not actor 0@ driving_heli 
+jf @TAMAI_4232 
+gosub @TAMAI_28206 
+$TEMPVAR_FLOAT_3 = Actor.CurrentCar(20@)
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+046C: $TEMPVAR_FLOAT_2 = car $TEMPVAR_FLOAT_1 driver 
+if 
+003B:   $TEMPVAR_FLOAT_2 == 0@ // (int) 
+jf @TAMAI_4232 
+06E1: AS_actor 0@ using_car -1 target_car $TEMPVAR_FLOAT_3 with_order 15 max_speed 40.0 traffic_flag 2 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+jump @TAMAI_24527 
+
+:TAMAI_4232
+jump @TAMAI_4246 
+
+:TAMAI_4239
+13@ = 0 
+
+:TAMAI_4246
+jump @TAMAI_24523 
+
+:TAMAI_4253
+089F: get_actor 0@ pedtype_to $TEMPVAR_X_COORD 
+if and
+   not $TEMPVAR_X_COORD == 27 
+80FE:   not actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 20.0 20.0 20.0 
+jf @TAMAI_4721 
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+get_random_car_in_sphere_no_save_recursive 11@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 20.0 1 1 
+if 
+   not Car.Wrecked(11@)
+jf @TAMAI_4721 
+09B3: get_car 11@ door_status $TEMPVAR_FLOAT_2 
+if and
+   not $TEMPVAR_FLOAT_2 == 1 
+   not $TEMPVAR_FLOAT_2 == 2 
+   not $TEMPVAR_FLOAT_2 == 4 
+jf @TAMAI_4721 
+if or
+   Car.Model(11@) == 432
+   Car.Model(11@) == 425
+   Car.Model(11@) == 497
+   Car.Model(11@) == 520
+jf @TAMAI_4721 
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+if 
+   Actor.Dead($TEMPVAR_FLOAT_1)
+jf @TAMAI_4560 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_4553 
+07A1: set_walk_speed 6 
+05CB: AS_actor 0@ enter_car 11@ as_driver -1 ms 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24527 
+
+:TAMAI_4553
+jump @TAMAI_4721 
+
+:TAMAI_4560
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+089F: get_actor $TEMPVAR_FLOAT_1 pedtype_to $TEMPVAR_FLOAT_2 
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_3 
+if 
+003B:   $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_4721 
+01E9: $TEMPVAR_FLOAT_2 = car 11@ num_passengers 
+01EA: $TEMPVAR_FLOAT_3 = car 11@ max_passengers 
+if 
+803B:   not  $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_4721 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_4721 
+07A1: set_walk_speed 6 
+0430: put_actor 0@ into_car 11@ passenger_seat -1 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24527 
+
+:TAMAI_4721
+jump @TAMAI_24523 
+01B9: set_actor 0@ armed_weapon_to 22 
+01B9: set_actor 0@ armed_weapon_to 23 
+01B9: set_actor 0@ armed_weapon_to 24 
+01B9: set_actor 0@ armed_weapon_to 25 
+01B9: set_actor 0@ armed_weapon_to 26 
+01B9: set_actor 0@ armed_weapon_to 27 
+01B9: set_actor 0@ armed_weapon_to 28 
+01B9: set_actor 0@ armed_weapon_to 29 
+01B9: set_actor 0@ armed_weapon_to 30 
+01B9: set_actor 0@ armed_weapon_to 31 
+01B9: set_actor 0@ armed_weapon_to 32 
+01B9: set_actor 0@ armed_weapon_to 33 
+01B9: set_actor 0@ armed_weapon_to 34 
+01B9: set_actor 0@ armed_weapon_to 35 
+01B9: set_actor 0@ armed_weapon_to 36 
+01B9: set_actor 0@ armed_weapon_to 37 
+01B9: set_actor 0@ armed_weapon_to 38 
+return 
+
+:TAMAI_4849
+if or
+   Actor.Animation(0@) == "GUNMOVE_L"
+   Actor.Animation(0@) == "GUNMOVE_R"
+   Actor.Animation(0@) == "GUNMOVE_FWD"
+   Actor.Animation(0@) == "GUNMOVE_BWD"
+jf @TAMAI_4935 
+gosub @TAMAI_28206 
+
+:TAMAI_4935
+jump @TAMAI_24523 
+
+:TAMAI_4942
+if 
+   Actor.Driving(0@)
+jf @TAMAI_5953 
+if or
+   Actor.DrivingVehicleType(0@, 520)
+04A9:   actor 0@ driving_heli 
+jf @TAMAI_5631 
+if 
+001D:   TIMERA > 27@ // (int) 
+jf @TAMAI_5624 
+if 
+   Actor.Driving(0@)
+jf @TAMAI_5624 
+8@ = Actor.CurrentCar(0@)
+if 
+   not Car.Wrecked(8@)
+jf @TAMAI_5624 
+if 
+gosub @TAMAI_29414 
+jf @TAMAI_5617 
+0085: 27@ = TIMERA // (int) 
+27@ += 160 
+8@ = Actor.CurrentCar(0@)
+if 
+   Actor.DrivingVehicleType(0@, 520)
+jf @TAMAI_5333 
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -2.7 2.7 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 1.0 -2.4 
+06BC: create_M4_shoot_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD target $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 energy 100 
+058A: create_gun_flash_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -2.7 2.7 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 1.0 -2.4 
+06BC: create_M4_shoot_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD target $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 energy 100 
+058A: create_gun_flash_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+09F1: play_audio_at_actor 0@ event 1157 
+jump @TAMAI_24523 
+
+:TAMAI_5333
+046C: $TEMPVAR_FLOAT_1 = car 8@ driver 
+0432: $TEMPVAR_FLOAT_2 = get_actor_handle_from_car 8@ passenger_seat 1 
+if or
+003B:   $TEMPVAR_FLOAT_1 == 0@ // (int) 
+003B:   $TEMPVAR_FLOAT_2 == 0@ // (int) 
+jf @TAMAI_5501 
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -0.7 0.7 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset -1.2 0.0 -0.8 
+06BC: create_M4_shoot_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD target $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 energy 20 
+058A: create_gun_flash_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+09F1: play_audio_at_actor 0@ event 1157 
+jump @TAMAI_5617 
+
+:TAMAI_5501
+0889: store_actor 20@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0208: $TEMPVAR_X_COORD = random_float_in_ranges -0.7 0.7 
+005B: $TEMPVAR_FLOAT_1 += $TEMPVAR_X_COORD // (float) 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 1.2 0.0 -0.8 
+06BC: create_M4_shoot_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD target $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 energy 20 
+058A: create_gun_flash_from $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+09F1: play_audio_at_actor 0@ event 1157 
+
+:TAMAI_5617
+jump @TAMAI_24523 
+
+:TAMAI_5624
+jump @TAMAI_5953 
+
+:TAMAI_5631
+if 
+001D:   TIMERA > 27@ // (int) 
+jf @TAMAI_5953 
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+046C: $TEMPVAR_FLOAT_2 = car $TEMPVAR_FLOAT_1 driver 
+if 
+803B:   not  $TEMPVAR_FLOAT_2 == 0@ // (int) 
+jf @TAMAI_5953 
+if and
+   not Actor.Animation(0@) == "GANG_DRIVEBYLHS"
+   not Actor.Animation(0@) == "GANG_DRIVEBYLHS_BWD"
+   not Actor.Animation(0@) == "GANG_DRIVEBYLHS_FWD"
+   not Actor.Animation(0@) == "GANG_DRIVEBYRHS"
+   not Actor.Animation(0@) == "GANG_DRIVEBYRHS_BWD"
+   not Actor.Animation(0@) == "GANG_DRIVEBYRHS_FWD"
+   not Actor.Animation(0@) == "GANG_DRIVEBYTOP_LHS"
+   not Actor.Animation(0@) == "GANG_DRIVEBYTOP_RHS"
+jf @TAMAI_5953 
+060B: set_actor 0@ decision_maker_to 1 
+0713: actor 0@ driveby_actor 20@ car -1 point 0 0 0 radius 900.0 4 1 firing_rate 80 
+0085: 27@ = TIMERA // (int) 
+27@ += 2000 
+jump @TAMAI_24527 
+
+:TAMAI_5953
+jump @TAMAI_24523 
+
+:TAMAI_5960
+if 
+  13@ == 252 
+jf @TAMAI_6024 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_6017 
+gosub @TAMAI_28206 
+13@ = 0 
+
+:TAMAI_6017
+jump @TAMAI_24527 
+
+:TAMAI_6024
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_6365 
+if 
+   not 13@ == 252 
+jf @TAMAI_6365 
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+10@ = 0 
+
+:TAMAI_6080
+get_random_car_in_sphere_no_save_recursive 11@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 10.0 1 1 
+if 
+   not Car.Wrecked(11@)
+jf @TAMAI_6209 
+if 
+8185:   not car 11@ health > 250 
+jf @TAMAI_6209 
+gosub @TAMAI_28206 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+05DA: AS_actor 0@ run_away_in_panic_from $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 away_radius 100.0 timelimit 30000 
+01BD: 19@ = current_time_in_ms 
+19@ += 800 
+13@ = 252 
+jump @TAMAI_24527 
+
+:TAMAI_6209
+get_random_object_in_sphere_no_save_recursive 11@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 10.0 1 
+if 
+03CA:   object 11@ exists 
+jf @TAMAI_6344 
+if or
+   Object.Model(11@) == 342
+   Object.Model(11@) == 344
+jf @TAMAI_6344 
+gosub @TAMAI_28206 
+Object.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+05DA: AS_actor 0@ run_away_in_panic_from $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 away_radius 100.0 timelimit 30000 
+01BD: 19@ = current_time_in_ms 
+19@ += 800 
+13@ = 252 
+jump @TAMAI_24527 
+
+:TAMAI_6344
+10@ += 1 
+  10@ > 12 
+jf @TAMAI_6080 
+
+:TAMAI_6365
+jump @TAMAI_24523 
+
+:TAMAI_6372
+if 
+003B:   $PLAYER_ACTOR == 4@ // (int) 
+jf @TAMAI_24523 
+if or
+is_key_pressed 1 
+00E1:   player 0 pressed_key 4 
+jf @TAMAI_6505 
+if 
+get_char_player_is_targeting $TEMPVAR_FLOAT_1 $PLAYER_CHAR 
+jf @TAMAI_6505 
+if 
+   not Actor.Dead($TEMPVAR_FLOAT_1)
+jf @TAMAI_6505 
+089F: get_actor $TEMPVAR_FLOAT_1 pedtype_to $TEMPVAR_X_COORD 
+089F: get_actor 0@ pedtype_to $TEMPVAR_Y_COORD 
+if 
+803B:   not  $TEMPVAR_X_COORD == $TEMPVAR_Y_COORD // (int) 
+jf @TAMAI_6505 
+13@ = 40 
+0085: 20@ = $TEMPVAR_FLOAT_1 // (int) 
+26@ = -200 
+
+:TAMAI_6505
+jump @TAMAI_24523 
+
+:TAMAI_6512
+if 
+056D:   actor 4@ defined 
+jf @TAMAI_7447 
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_7447 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_7447 
+if 
+  18@ == 59 
+jf @TAMAI_6600 
+gosub @TAMAI_24660 
+jump @TAMAI_24523 
+
+:TAMAI_6600
+if or
+  13@ == 200 
+   not 13@ == 201 
+jf @TAMAI_6683 
+if 
+gosub @TAMAI_7593 
+jf @TAMAI_6652 
+gosub @TAMAI_8120 
+
+:TAMAI_6652
+if 
+0449:   actor 0@ in_a_car 
+jf @TAMAI_6676 
+13@ = 201 
+
+:TAMAI_6676
+jump @TAMAI_6683 
+
+:TAMAI_6683
+if 
+   Actor.Driving(0@)
+jf @TAMAI_7097 
+if 
+   Actor.Driving(4@)
+jf @TAMAI_6911 
+if 
+80F2:   not actor 0@ near_actor 4@ radius 10.0 10.0 0 
+jf @TAMAI_6904 
+if 
+80F2:   not actor 0@ near_actor 4@ radius 20.0 20.0 0 
+jf @TAMAI_6864 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges -1.0 1.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+jump @TAMAI_6904 
+
+:TAMAI_6864
+$TEMPVAR_FLOAT_2 = Actor.CurrentCar(4@)
+06E1: AS_actor 0@ using_car -1 target_car $TEMPVAR_FLOAT_2 with_order 32 max_speed 40.0 traffic_flag 2 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+
+:TAMAI_6904
+jump @TAMAI_7090 
+
+:TAMAI_6911
+if 
+80F2:   not actor 0@ near_actor 4@ radius 15.0 15.0 0 
+jf @TAMAI_7029 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges -1.0 1.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+jump @TAMAI_7090 
+
+:TAMAI_7029
+if and
+   not Actor.DrivingVehicleType(0@, 432)
+   not Actor.DrivingPlane(0@)
+   not Actor.Driving(4@)
+jf @TAMAI_7090 
+0633: AS_actor 0@ exit_car 
+13@ = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24527 
+
+:TAMAI_7090
+jump @TAMAI_7447 
+
+:TAMAI_7097
+if 
+80F2:   not actor 0@ near_actor 4@ radius 3.0 3.0 0 
+jf @TAMAI_7349 
+if 
+00F2:   actor 0@ near_actor 4@ radius 15.0 15.0 0 
+jf @TAMAI_7246 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.3 1.3 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges -1.3 1.3 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+jump @TAMAI_7349 
+
+:TAMAI_7246
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.3 1.3 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges -1.3 1.3 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+0085: 6@ = 13@ // (int) 
+13@ = 0 
+gosub @TAMAI_25143 
+0085: 13@ = 6@ // (int) 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_7349
+if 
+0A1B:   actor 4@ colliding_with_actor 0@ 
+jf @TAMAI_7447 
+if or
+  13@ == 40 
+  13@ == 39 
+jf @TAMAI_7447 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset 0.0 2.0 0.0 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_7447
+jump @TAMAI_24523 
+
+:TAMAI_7454
+$TEMPVAR_FLOAT_1 = 0.0 
+$TEMPVAR_FLOAT_2 = 0.0 
+$TEMPVAR_FLOAT_3 = 0.0 
+$TEMPVAR_X_COORD = 0.0 
+$TEMPVAR_Y_COORD = 0.0 
+$TEMPVAR_Z_COORD = 0.0 
+$TEMPVAR_ACTOR_CAR = -1 
+7@ = -1 
+8@ = -1 
+9@ = -1 
+10@ = -1 
+11@ = -1 
+12@ = -1 
+14@ = -1 
+15@ = -1 
+16@ = -1 
+17@ = 0 
+return 
+
+:TAMAI_7593
+if 
+0449:   actor 4@ in_a_car 
+jf @TAMAI_8113 
+0811: $TEMPVAR_FLOAT_1 = actor 4@ used_car 
+01E9: $TEMPVAR_FLOAT_2 = car $TEMPVAR_FLOAT_1 num_passengers 
+01EA: $TEMPVAR_FLOAT_3 = car $TEMPVAR_FLOAT_1 max_passengers 
+if 
+803B:   not  $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_7682 
+if 
+8449:   not actor 0@ in_a_car 
+jf @TAMAI_7675 
+jump @TAMAI_24523 
+
+:TAMAI_7675
+jump @TAMAI_8113 
+
+:TAMAI_7682
+if 
+8449:   not actor 0@ in_a_car 
+jf @TAMAI_8113 
+10@ = 0 
+
+:TAMAI_7705
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+get_random_car_in_sphere_no_save_recursive 11@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 40.0 1 1 
+if 
+   not Car.Wrecked(11@)
+jf @TAMAI_8092 
+09B3: get_car 11@ door_status $TEMPVAR_FLOAT_2 
+if and
+   not $TEMPVAR_FLOAT_2 == 1 
+   not $TEMPVAR_FLOAT_2 == 2 
+   not $TEMPVAR_FLOAT_2 == 4 
+jf @TAMAI_8092 
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+if 
+   Actor.Dead($TEMPVAR_FLOAT_1)
+jf @TAMAI_7920 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_7913 
+07A1: set_walk_speed 6 
+05CB: AS_actor 0@ enter_car 11@ as_driver -1 ms 
+13@ = 201 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24523 
+
+:TAMAI_7913
+jump @TAMAI_8092 
+
+:TAMAI_7920
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+089F: get_actor $TEMPVAR_FLOAT_1 pedtype_to $TEMPVAR_FLOAT_2 
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_3 
+if 
+003B:   $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_8092 
+01E9: $TEMPVAR_FLOAT_2 = car 11@ num_passengers 
+01EA: $TEMPVAR_FLOAT_3 = car 11@ max_passengers 
+if 
+803B:   not  $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_8092 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_8092 
+07A1: set_walk_speed 6 
+05CA: AS_actor 0@ enter_car 11@ passenger_seat -1 time 2000 
+13@ = 201 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24523 
+
+:TAMAI_8092
+10@ += 1 
+  10@ > 40 
+jf @TAMAI_7705 
+
+:TAMAI_8113
+jump @TAMAI_24527 
+
+:TAMAI_8120
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if and
+   not 13@ == 201 
+   Actor.Driving(4@)
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_8331 
+gosub @TAMAI_28206 
+if or
+   not 13@ == 200 
+  TIMERB > 3000 
+jf @TAMAI_8318 
+0811: $TEMPVAR_FLOAT_1 = actor 4@ used_car 
+if 
+003B:   4@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_8293 
+if 
+0104:   actor 4@ near_actor 0@ radius 20.0 20.0 20.0 sphere 0 
+jf @TAMAI_8274 
+05CA: AS_actor 0@ enter_car $TEMPVAR_FLOAT_1 passenger_seat -1 time 3000 
+jump @TAMAI_8286 
+
+:TAMAI_8274
+0430: put_actor 0@ into_car $TEMPVAR_FLOAT_1 passenger_seat -1 
+return 
+
+:TAMAI_8286
+jump @TAMAI_8303 
+
+:TAMAI_8293
+0430: put_actor 0@ into_car $TEMPVAR_FLOAT_1 passenger_seat -1 
+
+:TAMAI_8303
+13@ = 200 
+TIMERB = 0 
+
+:TAMAI_8318
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+
+:TAMAI_8331
+return 
+if or
+  13@ == 200 
+  13@ == 201 
+   Actor.Driving(0@)
+jf @TAMAI_8535 
+if 
+8449:   not actor 4@ in_a_car 
+jf @TAMAI_8535 
+if and
+0104:   actor 0@ near_actor 4@ radius 15.0 15.0 15.0 sphere 0 
+   Actor.Driving(0@)
+   not Actor.DrivingVehicleType(0@, 432)
+   not Actor.DrivingPlane(0@)
+jf @TAMAI_8474 
+0633: AS_actor 0@ exit_car 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+13@ = 0 
+TIMERB = 0 
+jump @TAMAI_24527 
+
+:TAMAI_8474
+if or
+  13@ == 200 
+  13@ == 201 
+jf @TAMAI_8535 
+01BD: 19@ = current_time_in_ms 
+19@ += 500 
+13@ = 0 
+TIMERB = 0 
+jump @TAMAI_24527 
+
+:TAMAI_8535
+jump @TAMAI_24523 
+
+:TAMAI_8542
+if 
+803B:   not  $PLAYER_ACTOR == 0@ // (int) 
+jf @TAMAI_24523 
+if 
+06EE:   actor 0@ in_group $PLAYER_GROUP 
+jf @TAMAI_8607 
+06C9: remove_actor 0@ from_group 
+0085: 4@ = $PLAYER_ACTOR // (int) 
+gosub @TAMAI_28206 
+jump @TAMAI_24527 
+
+:TAMAI_8607
+jump @TAMAI_24523 
+
+:TAMAI_8614
+if 
+   Actor.Driving(0@)
+jf @TAMAI_8637 
+jump @TAMAI_24523 
+
+:TAMAI_8637
+if 
+  13@ == 39 
+jf @TAMAI_8681 
+if 
+  TIMERB > 5000 
+jf @TAMAI_8681 
+13@ = 0 
+
+:TAMAI_8681
+if 
+02E0:   actor $PLAYER_ACTOR firing_weapon 
+jf @TAMAI_9072 
+if or
+  3@ == -15 
+  2@ == 2 
+003B:   4@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_8883 
+if or
+  13@ == 0 
+  13@ == 152 
+  13@ == 155 
+  13@ == 156 
+  13@ == 157 
+jf @TAMAI_8883 
+if 
+0104:   actor $PLAYER_ACTOR near_actor 0@ radius 30.0 30.0 100.0 sphere 0 
+jf @TAMAI_8883 
+gosub @TAMAI_28206 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor $PLAYER_ACTOR with_offset 0.0 40.0 0.0 
+0667: AS_actor 0@ aim_at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 5000 ms 
+13@ = 39 
+TIMERB = 0 
+
+:TAMAI_8883
+if or
+  3@ == -10 
+  3@ == -11 
+  3@ == -12 
+  3@ == -13 
+  3@ == -20 
+  3@ == -18 
+  3@ == -19 
+jf @TAMAI_9072 
+if or
+  13@ == 0 
+  13@ == 152 
+jf @TAMAI_9072 
+if 
+0104:   actor $PLAYER_ACTOR near_actor 0@ radius 30.0 30.0 100.0 sphere 0 
+jf @TAMAI_9072 
+gosub @TAMAI_28206 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor $PLAYER_ACTOR with_offset 0.0 0.0 0.0 
+0667: AS_actor 0@ aim_at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 5000 ms 
+13@ = 39 
+TIMERB = 0 
+
+:TAMAI_9072
+jump @TAMAI_24523 
+
+:TAMAI_9079
+if 
+   not 2@ == 5 
+jf @TAMAI_24523 
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+jf @TAMAI_24523 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+0085: $TEMPVAR_FLOAT_2 = 19@ // (int) 
+$TEMPVAR_FLOAT_2 += 600 
+if 
+001D:   $TEMPVAR_FLOAT_1 > $TEMPVAR_FLOAT_2 // (int) 
+jf @TAMAI_9891 
+if 
+  18@ == 59 
+jf @TAMAI_9208 
+gosub @TAMAI_24660 
+jump @TAMAI_24523 
+
+:TAMAI_9208
+if 
+  2@ == 1 
+jf @TAMAI_9317 
+if 
+80FE:   not actor 0@ sphere 0 in_sphere 23@ 24@ 25@ radius 1.0 1.0 1000.0 
+jf @TAMAI_9317 
+0086: $TEMPVAR_X_COORD = 23@ // (float) 
+0086: $TEMPVAR_Y_COORD = 24@ // (float) 
+0086: $TEMPVAR_Z_COORD = 25@ // (float) 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_9317
+if 
+  13@ == 0 
+jf @TAMAI_9456 
+13@ = 155 
+gosub @TAMAI_28206 
+if and
+   not 3@ == -20 
+   not 5@ == -2 
+   not Actor.Driving(0@)
+jf @TAMAI_9439 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 20.0 0.0 
+0667: AS_actor 0@ aim_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 -1 ms 
+TIMERB = 0 
+jump @TAMAI_24523 
+
+:TAMAI_9439
+TIMERB = 1000000000 
+jump @TAMAI_24523 
+
+:TAMAI_9456
+if 
+  13@ == 155 
+jf @TAMAI_9777 
+if 
+  TIMERB > 2500 
+jf @TAMAI_9777 
+TIMERB = 0 
+13@ = 155 
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_9735 
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_9563 
+0A1D: AS_actor 0@ rotate_to_and_look_at_actor 4@ 
+jump @TAMAI_24523 
+jump @TAMAI_9728 
+
+:TAMAI_9563
+if 
+  5@ > 16 
+jf @TAMAI_9606 
+0618: assign_actor 0@ to_AS_pack 5@ 
+TIMERB = -60000 
+jump @TAMAI_24523 
+
+:TAMAI_9606
+if and
+   Actor.Dead(4@)
+  3@ == -20 
+jf @TAMAI_9651 
+05DE: AS_actor 0@ walk_around_ped_path 
+TIMERB -= 60000 
+jump @TAMAI_24523 
+
+:TAMAI_9651
+if and
+   Actor.Dead(4@)
+  2@ == 4 
+jf @TAMAI_9723 
+if and
+   not 13@ == 157 
+  2@ == 4 
+jf @TAMAI_9716 
+13@ = 157 
+TIMERB = 25000 
+
+:TAMAI_9716
+jump @TAMAI_9728 
+
+:TAMAI_9723
+05C8: AS_actor 0@ look_around 
+
+:TAMAI_9728
+jump @TAMAI_9777 
+
+:TAMAI_9735
+if and
+   not 13@ == 157 
+  2@ == 4 
+jf @TAMAI_9777 
+13@ = 157 
+TIMERB = 25000 
+
+:TAMAI_9777
+if 
+  13@ == 157 
+jf @TAMAI_9891 
+if 
+  TIMERB > 10000 
+jf @TAMAI_9868 
+if 
+  18@ == 59 
+jf @TAMAI_9854 
+gosub @TAMAI_24660 
+TIMERB = 0 
+jump @TAMAI_9868 
+
+:TAMAI_9854
+gosub @TAMAI_24586 
+TIMERB = 0 
+
+:TAMAI_9868
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_9891 
+13@ = 0 
+
+:TAMAI_9891
+jump @TAMAI_24523 
+
+:TAMAI_9898
+if 
+  3@ == -20 
+jf @TAMAI_10218 
+if 
+   Player.WantedLevel($PLAYER_CHAR) > 0
+jf @TAMAI_10218 
+077E: get_active_interior_to $TEMPVAR_Y_COORD 
+09E8: $TEMPVAR_Z_COORD = actor 0@ active_interior 
+if 
+803B:   not  $TEMPVAR_Z_COORD == $TEMPVAR_Y_COORD // (int) 
+jf @TAMAI_10218 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.0 
+wait 2020 
+gosub @TAMAI_21180 
+if 
+   not Actor.Dead(0@)
+jf @TAMAI_10211 
+gosub @TAMAI_28206 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges 0.0 1.5 
+$TEMPVAR_FLOAT_1 *= 1.5 
+$TEMPVAR_FLOAT_2 *= 1.5 
+077E: get_active_interior_to $TEMPVAR_Z_COORD 
+0860: link_actor 0@ to_interior $TEMPVAR_Z_COORD 
+04C4: store_coords_to 7@ 8@ 9@ from_actor $PLAYER_ACTOR with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 -0.5 
+
+:TAMAI_10118
+wait 0 
+gosub @TAMAI_21180 
+if 
+80FE:   not actor $PLAYER_ACTOR sphere 0 in_sphere 7@ 8@ 9@ radius 8.0 8.0 8.0 
+jf @TAMAI_10197 
+0792: disembark_instantly_actor 0@ 
+0972: put_actor 0@ at 7@ 8@ 9@ no_offset 
+jump @TAMAI_24523 
+
+:TAMAI_10197
+jump @TAMAI_10118 
+jump @TAMAI_10218 
+
+:TAMAI_10211
+jump @TAMAI_24523 
+
+:TAMAI_10218
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_10549 
+if and
+   not 18@ == 591 
+80F2:   not actor 4@ near_actor 0@ radius 160.0 160.0 0 
+jf @TAMAI_10375 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -4.0 4.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges -4.0 -4.5 
+$TEMPVAR_FLOAT_1 *= 1.5 
+$TEMPVAR_FLOAT_2 *= 1.5 
+077E: get_active_interior_to $TEMPVAR_Z_COORD 
+0860: link_actor 0@ to_interior $TEMPVAR_Z_COORD 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+0972: put_actor 0@ at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD no_offset 
+
+:TAMAI_10375
+077E: get_active_interior_to $TEMPVAR_Y_COORD 
+09E8: $TEMPVAR_Z_COORD = actor 0@ active_interior 
+if 
+803B:   not  $TEMPVAR_Z_COORD == $TEMPVAR_Y_COORD // (int) 
+jf @TAMAI_10549 
+wait 2020 
+gosub @TAMAI_21180 
+if and
+   not Actor.Dead(0@)
+   not Actor.Dead(4@)
+jf @TAMAI_10549 
+gosub @TAMAI_28206 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges 0.0 1.5 
+$TEMPVAR_FLOAT_1 *= 1.5 
+$TEMPVAR_FLOAT_2 *= 1.5 
+077E: get_active_interior_to $TEMPVAR_Z_COORD 
+0860: link_actor 0@ to_interior $TEMPVAR_Z_COORD 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 4@ with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 -0.5 
+0972: put_actor 0@ at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD no_offset 
+
+:TAMAI_10549
+jump @TAMAI_24523 
+
+:TAMAI_10556
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_24527 
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+   not 13@ == 42 
+jf @TAMAI_10780 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+0085: $TEMPVAR_FLOAT_2 = 19@ // (int) 
+if and
+001D:   $TEMPVAR_FLOAT_1 > $TEMPVAR_FLOAT_2 // (int) 
+0457:   player $PLAYER_CHAR aiming_at_actor 0@ 
+jf @TAMAI_10780 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -32767 32767 
+if 
+  $TEMPVAR_FLOAT_1 >= 0 
+jf @TAMAI_10704 
+$TEMPVAR_FLOAT_2 = 5.0 
+jump @TAMAI_10714 
+
+:TAMAI_10704
+$TEMPVAR_FLOAT_2 = -5.0 
+
+:TAMAI_10714
+13@ = 40 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset $TEMPVAR_FLOAT_2 -1.0 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_10780 
+jump @TAMAI_24527 
+
+:TAMAI_10780
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_12795 
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+jf @TAMAI_12795 
+11@ = -1 
+10@ = 0 
+
+:TAMAI_10857
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+get_random_car_in_sphere_no_save_recursive 9@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 20.0 1 1 
+if 
+056E:   car 9@ defined 
+jf @TAMAI_11228 
+if 
+   Car.Wrecked(11@)
+jf @TAMAI_11000 
+Actor.StorePos(0@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.StorePos(9@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+050A: 8@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+0086: 7@ = 8@ // (float) 
+0085: 11@ = 9@ // (int) 
+jump @TAMAI_11228 
+
+:TAMAI_11000
+if and
+056E:   car 9@ defined 
+01C1:   car 9@ stopped 
+jf @TAMAI_11228 
+Car.StorePos(9@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 5.0 
+0086: $TEMPVAR_X_COORD = 7@ // (float) 
+0086: $TEMPVAR_Y_COORD = 8@ // (float) 
+0085: $TEMPVAR_Z_COORD = 9@ // (int) 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_11204 
+0086: 7@ = $TEMPVAR_X_COORD // (float) 
+0086: 8@ = $TEMPVAR_Y_COORD // (float) 
+0085: 9@ = $TEMPVAR_Z_COORD // (int) 
+Actor.StorePos(0@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.StorePos(9@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+050A: 8@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+if 
+0025:   7@ > 8@ // (float) 
+jf @TAMAI_11197 
+0086: 7@ = 8@ // (float) 
+0085: 11@ = 9@ // (int) 
+
+:TAMAI_11197
+jump @TAMAI_11228 
+
+:TAMAI_11204
+0086: 7@ = $TEMPVAR_X_COORD // (float) 
+0086: 8@ = $TEMPVAR_Y_COORD // (float) 
+0085: 9@ = $TEMPVAR_Z_COORD // (int) 
+
+:TAMAI_11228
+10@ += 1 
+  10@ > 35 
+jf @TAMAI_10857 
+if 
+056E:   car 11@ defined 
+jf @TAMAI_12795 
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 1.3 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_11319 
+jump @TAMAI_11520 
+
+:TAMAI_11319
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_11520 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 1.3 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_11520 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_11520
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 1.3 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_11574 
+jump @TAMAI_11775 
+
+:TAMAI_11574
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_11775 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 1.3 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_11775 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_11775
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 -1.4 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_11829 
+jump @TAMAI_12030 
+
+:TAMAI_11829
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_12030 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 -1.4 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_12030 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_12030
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 -1.4 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_12084 
+jump @TAMAI_12285 
+
+:TAMAI_12084
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_12285 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 -1.4 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_12285 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_12285
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 0.0 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_12339 
+jump @TAMAI_12540 
+
+:TAMAI_12339
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_12540 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_12540 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_12540
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 0.0 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_12594 
+jump @TAMAI_12795 
+
+:TAMAI_12594
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.5 
+$TEMPVAR_FLOAT_2 += 0.5 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.5 
+8@ -= 0.5 
+9@ += 0.5 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_12795 
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_12795 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_12795
+jump @TAMAI_24523 
+
+:TAMAI_12802
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_13284 
+if or
+  13@ == 49 
+  13@ == 48 
+jf @TAMAI_13284 
+0085: 11@ = 28@ // (int) 
+gosub @TAMAI_13341 
+if 
+056E:   car 11@ defined 
+jf @TAMAI_12941 
+if 
+0202:   actor 0@ near_car 11@ radius 10.0 10.0 sphere 0 
+jf @TAMAI_12920 
+jump @TAMAI_12934 
+
+:TAMAI_12920
+13@ = 40 
+jump @TAMAI_24523 
+
+:TAMAI_12934
+jump @TAMAI_12955 
+
+:TAMAI_12941
+13@ = 40 
+jump @TAMAI_24523 
+
+:TAMAI_12955
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 -= 0.4 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_13011 
+13@ = 40 
+jump @TAMAI_24523 
+
+:TAMAI_13011
+if and
+  13@ == 49 
+  TIMERB > 2500 
+jf @TAMAI_13085 
+gosub @TAMAI_28206 
+0638: AS_actor 0@ stay_put 1 
+04EB: AS_actor 0@ crouch 1 
+13@ = 48 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 300 
+
+:TAMAI_13085
+if and
+  13@ == 48 
+  TIMERB > 2000 
+8457:   not player $PLAYER_CHAR aiming_at_actor 0@ 
+jf @TAMAI_13160 
+gosub @TAMAI_28206 
+04EB: AS_actor 0@ crouch 0 
+13@ = 49 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 300 
+
+:TAMAI_13160
+if 
+  13@ == 49 
+jf @TAMAI_13284 
+if 
+  TIMERB > 250 
+jf @TAMAI_13204 
+gosub @TAMAI_24687 
+
+:TAMAI_13204
+if 
+  TIMERB > 1000 
+jf @TAMAI_13277 
+if 
+0457:   player $PLAYER_CHAR aiming_at_actor 0@ 
+jf @TAMAI_13277 
+gosub @TAMAI_28206 
+0638: AS_actor 0@ stay_put 1 
+04EB: AS_actor 0@ crouch 1 
+13@ = 48 
+TIMERB = 0 
+
+:TAMAI_13277
+jump @TAMAI_24527 
+
+:TAMAI_13284
+jump @TAMAI_24523 
+
+:TAMAI_13291
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+if 
+001D:   $TEMPVAR_FLOAT_1 > 19@ // (int) 
+jf @TAMAI_15722 
+if 
+  13@ == 45 
+jf @TAMAI_15722 
+0085: 11@ = 28@ // (int) 
+
+:TAMAI_13341
+if 
+056E:   car 11@ defined 
+jf @TAMAI_15715 
+if 
+0202:   actor 0@ near_car 11@ radius 20.0 20.0 sphere 0 
+jf @TAMAI_15701 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_15694 
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 1.3 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_13484 
+jump @TAMAI_13806 
+
+:TAMAI_13484
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_13806 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_13738 
+if 
+   not 13@ == 48 
+jf @TAMAI_13731 
+13@ = 49 
+
+:TAMAI_13731
+jump @TAMAI_24523 
+
+:TAMAI_13738
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 1.3 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_13806 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_13806
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 1.3 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_13860 
+jump @TAMAI_14182 
+
+:TAMAI_13860
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_14182 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_14114 
+if 
+   not 13@ == 48 
+jf @TAMAI_14107 
+13@ = 49 
+
+:TAMAI_14107
+jump @TAMAI_24523 
+
+:TAMAI_14114
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 1.3 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_14182 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_14182
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 -1.4 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_14236 
+jump @TAMAI_14558 
+
+:TAMAI_14236
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_14558 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_14490 
+if 
+   not 13@ == 48 
+jf @TAMAI_14483 
+13@ = 49 
+
+:TAMAI_14483
+jump @TAMAI_24523 
+
+:TAMAI_14490
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 -1.4 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_14558 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_14558
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 -1.4 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_14612 
+jump @TAMAI_14934 
+
+:TAMAI_14612
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_14934 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_14866 
+if 
+   not 13@ == 48 
+jf @TAMAI_14859 
+13@ = 49 
+
+:TAMAI_14859
+jump @TAMAI_24523 
+
+:TAMAI_14866
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 -1.4 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_14934 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_14934
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset 1.8 0.0 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_14988 
+jump @TAMAI_15318 
+
+:TAMAI_14988
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_15318 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_15242 
+if 
+   not 13@ == 48 
+jf @TAMAI_15235 
+13@ = 49 
+
+:TAMAI_15235
+jump @TAMAI_24523 
+
+:TAMAI_15242
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset 1.8 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_15318 
+0085: 28@ = 11@ // (int) 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_15318
+0407: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_car 11@ with_offset -1.8 0.0 0.0 
+if 
+gosub @TAMAI_30261 
+jf @TAMAI_15372 
+jump @TAMAI_15694 
+
+:TAMAI_15372
+0086: 7@ = $TEMPVAR_FLOAT_1 // (float) 
+0086: 8@ = $TEMPVAR_FLOAT_2 // (float) 
+0086: 9@ = $TEMPVAR_FLOAT_3 // (float) 
+0086: $TEMPVAR_X_COORD = $TEMPVAR_FLOAT_1 // (float) 
+0086: $TEMPVAR_Y_COORD = $TEMPVAR_FLOAT_2 // (float) 
+0086: $TEMPVAR_Z_COORD = $TEMPVAR_FLOAT_3 // (float) 
+$TEMPVAR_FLOAT_1 -= 0.6 
+$TEMPVAR_FLOAT_2 += 0.6 
+$TEMPVAR_FLOAT_3 -= 0.3 
+7@ += 0.6 
+8@ -= 0.6 
+9@ += 0.6 
+if or
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 0 car 0 actor 1 object 0 particle 0 
+jf @TAMAI_15694 
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 1.3 1.3 1.5 
+jf @TAMAI_15626 
+if 
+   not 13@ == 48 
+jf @TAMAI_15619 
+13@ = 49 
+
+:TAMAI_15619
+jump @TAMAI_24523 
+
+:TAMAI_15626
+0407: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_car 11@ with_offset -1.8 0.0 0.0 
+gosub @TAMAI_25143 
+if 
+  12@ == -7 
+jf @TAMAI_15694 
+13@ = 45 
+jump @TAMAI_24527 
+
+:TAMAI_15694
+jump @TAMAI_15708 
+
+:TAMAI_15701
+13@ = 40 
+
+:TAMAI_15708
+jump @TAMAI_15722 
+
+:TAMAI_15715
+13@ = 40 
+
+:TAMAI_15722
+jump @TAMAI_24523 
+
+:TAMAI_15729
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_16577 
+if 
+00A4:   actor 0@ sphere 0 in_cube_cornerA -2243.077 2342.339 3.9918 cornerB -2211.995 2311.144 5.9918 
+jf @TAMAI_16048 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.1 4.5 0.1 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.1 0.0 -0.2 
+if 
+86BD:   not no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_16048 
+0792: disembark_instantly_actor 0@ 
+$TEMPVAR_FLOAT_1 = 0 
+
+:TAMAI_15904
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 -0.115 -1.0 
+Actor.PutAt(0@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+$TEMPVAR_FLOAT_1 += 1 
+  $TEMPVAR_FLOAT_1 > 4 
+jf @TAMAI_15904 
+078F: AS_actor 0@ climb 1 
+083C: set_actor 0@ velocity_in_direction_XYZ 0.0 0.0 6.0 
+if 
+  13@ == 157 
+jf @TAMAI_16029 
+TIMERB = 26000 
+jump @TAMAI_16036 
+
+:TAMAI_16029
+13@ = 0 
+
+:TAMAI_16036
+wait 600 
+jump @TAMAI_24527 
+
+:TAMAI_16048
+if 
+   Actor.Animation(0@) == "HIT_WALL"
+jf @TAMAI_16577 
+if 
+80FE:   not actor 0@ sphere 0 in_sphere 2149.359 -2262.217 13.3017 radius 55.0 55.0 55.0 
+jf @TAMAI_16577 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 1.0 0.0 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.0 
+if 
+86BD:   not no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 1 particle 0 
+jf @TAMAI_16577 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 1.0 6.0 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.5 3.0 
+if 
+06BD:   no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 1 particle 0 
+jf @TAMAI_16577 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset -0.3 0.8 3.0 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.3 -0.5 0.0 
+if 
+06BD:   no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 1 particle 0 
+jf @TAMAI_16577 
+gosub @TAMAI_28206 
+$TEMPVAR_FLOAT_1 = 0 
+
+:TAMAI_16433
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset 0.0 -0.1 -1.0 
+Actor.PutAt(0@, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+$TEMPVAR_FLOAT_1 += 1 
+  $TEMPVAR_FLOAT_1 > 4 
+jf @TAMAI_16433 
+078F: AS_actor 0@ climb 1 
+083C: set_actor 0@ velocity_in_direction_XYZ 0.0 0.0 6.0 
+if 
+  13@ == 157 
+jf @TAMAI_16558 
+TIMERB = 26000 
+jump @TAMAI_16565 
+
+:TAMAI_16558
+13@ = 0 
+
+:TAMAI_16565
+wait 600 
+jump @TAMAI_24527 
+
+:TAMAI_16577
+jump @TAMAI_24523 
+
+:TAMAI_16584
+0393: actor 0@ perform_animation "GUNMOVE_L" at 3.0 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_R" at 3.0 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_BWD" at 3.0 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_FWD" at 3.0 times_normal_rate 
+0393: actor 0@ perform_animation "SWIM_BREAST" at 3.0 times_normal_rate 
+0393: actor 0@ perform_animation "SWIM_CRAWL" at 3.0 times_normal_rate 
+26@ += 1 
+return 
+
+:TAMAI_16726
+0085: 20@ = 6@ // (int) 
+jump @TAMAI_19794 
+
+:TAMAI_16741
+if 
+803C:   not  $PLAYER_ACTOR == 15@ // (int) 
+jf @TAMAI_18821 
+if 
+   not Actor.Dead(15@)
+jf @TAMAI_19794 
+089F: get_actor 15@ pedtype_to $TEMPVAR_FLOAT_1 
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_2 
+if or
+  $TEMPVAR_FLOAT_1 == 3 
+  $TEMPVAR_FLOAT_1 == 4 
+  $TEMPVAR_FLOAT_1 == 5 
+803B:   not  $TEMPVAR_FLOAT_1 == $TEMPVAR_FLOAT_2 // (int) 
+jf @TAMAI_19794 
+0085: 10@ = $TEMPVAR_FLOAT_1 // (int) 
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_17030 
+if 
+   not 2@ == 4 
+jf @TAMAI_17023 
+0085: 6@ = 20@ // (int) 
+0085: 20@ = 15@ // (int) 
+if 
+gosub @TAMAI_29414 
+jf @TAMAI_16726 
+0085: 20@ = 6@ // (int) 
+0470: $TEMPVAR_Z_COORD = actor 0@ current_weapon 
+if and
+   not $TEMPVAR_Z_COORD == 38 
+   not $TEMPVAR_Z_COORD == 34 
+jf @TAMAI_17023 
+if or
+  $TEMPVAR_Z_COORD > 16 
+00F2:   actor 0@ near_actor 15@ radius 15.0 15.0 0 
+jf @TAMAI_19794 
+if 
+0104:   actor 0@ near_actor 15@ radius 80.0 80.0 180.0 sphere 0 
+jf @TAMAI_19794 
+
+:TAMAI_17023
+jump @TAMAI_17069 
+
+:TAMAI_17030
+if or
+   not Actor.DrivingVehicleType(0@, 432)
+80F2:   not actor 0@ near_actor 15@ radius 15.0 15.0 0 
+jf @TAMAI_19794 
+
+:TAMAI_17069
+if or
+003B:   10@ == 3@ // (int) 
+051A:   actor 0@ damaged_by_actor 15@ 
+jf @TAMAI_17103 
+jump @TAMAI_848 
+
+:TAMAI_17103
+if 
+056D:   actor 4@ defined 
+jf @TAMAI_17273 
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_17273 
+if 
+051A:   actor 4@ damaged_by_actor 15@ 
+jf @TAMAI_17161 
+jump @TAMAI_848 
+
+:TAMAI_17161
+if 
+   Actor.Driving(15@)
+jf @TAMAI_17211 
+$TEMPVAR_Z_COORD = Actor.CurrentCar(15@)
+if 
+051C:   car $TEMPVAR_Z_COORD damaged_by_actor 4@ 
+jf @TAMAI_17211 
+jump @TAMAI_848 
+
+:TAMAI_17211
+if 
+003C:   $PLAYER_ACTOR == 4@ // (int) 
+jf @TAMAI_17273 
+if 
+   Player.WantedLevel($PLAYER_CHAR) > 0
+jf @TAMAI_17273 
+if 
+  10@ == 6 
+jf @TAMAI_17273 
+jump @TAMAI_848 
+
+:TAMAI_17273
+04DD: $TEMPVAR_Z_COORD = actor 15@ armour 
+if and
+  10@ == 27 
+   not $TEMPVAR_Z_COORD >= 30 
+jf @TAMAI_17313 
+jump @TAMAI_848 
+
+:TAMAI_17313
+if 
+  3@ == -15 
+jf @TAMAI_17363 
+if or
+  10@ == 25 
+  10@ == 7 
+jf @TAMAI_17363 
+jump @TAMAI_848 
+
+:TAMAI_17363
+if 
+  3@ == -10 
+jf @TAMAI_17420 
+if or
+  10@ == 26 
+  10@ == 8 
+  10@ == 0 
+jf @TAMAI_17420 
+jump @TAMAI_848 
+
+:TAMAI_17420
+if 
+  3@ == -11 
+jf @TAMAI_17491 
+if or
+  10@ == 26 
+  10@ == 25 
+  10@ == 8 
+  10@ == 7 
+  10@ == 0 
+jf @TAMAI_17491 
+jump @TAMAI_848 
+
+:TAMAI_17491
+if 
+  3@ == -12 
+jf @TAMAI_17562 
+if or
+  10@ == 26 
+  10@ == 6 
+  10@ == 8 
+  10@ == 7 
+  10@ == 0 
+jf @TAMAI_17562 
+jump @TAMAI_848 
+
+:TAMAI_17562
+if 
+  3@ == -20 
+jf @TAMAI_17680 
+if and
+   not Actor.Model(15@) == 280
+   not Actor.Model(15@) == 281
+   not Actor.Model(15@) == 282
+   not Actor.Model(15@) == 284
+   not Actor.Model(15@) == 285
+   not Actor.Model(15@) == 286
+   not Actor.Model(15@) == 287
+   not Actor.Model(15@) == 283
+jf @TAMAI_17680 
+if 
+gosub @TAMAI_17712 
+jf @TAMAI_17680 
+jump @TAMAI_848 
+
+:TAMAI_17680
+if 
+  3@ == -13 
+jf @TAMAI_17705 
+jump @TAMAI_848 
+
+:TAMAI_17705
+jump @TAMAI_19794 
+
+:TAMAI_17712
+if and
+82E0:   not actor 15@ firing_weapon 
+   not Actor.Animation(15@) == "FIGHTA_1"
+   not Actor.Animation(15@) == "FIGHTA_2"
+   not Actor.Animation(15@) == "FIGHTA_3"
+   not Actor.Animation(15@) == "KNIFE_1"
+   not Actor.Animation(15@) == "KNIFE_2"
+   not Actor.Animation(15@) == "KNIFE_3"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "UZI_FIRE"
+   not Actor.Animation(15@) == "RIFLE_FIRE"
+   not Actor.Animation(15@) == "BAT_1"
+   not Actor.Animation(15@) == "BAT_2"
+   not Actor.Animation(15@) == "BAT_3"
+   not Actor.Animation(15@) == "BAT_4"
+   not Actor.Animation(15@) == "FIGHTA_BLOCK"
+   not Actor.Animation(15@) == "FIGHTIDLE"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "COLT45_CROUCHFIRE"
+   not Actor.Animation(15@) == "BUDDY_FIRE"
+   not Actor.Animation(15@) == "COLT45_FIRE"
+   not Actor.Animation(15@) == "COLT45_FIRE_2HANDS"
+   not Actor.Animation(15@) == "SHOTGUN_FIRE"
+   not Actor.Animation(15@) == "SILENCE_FIRE"
+   not Actor.Animation(15@) == "PYTHON_FIRE"
+   not Actor.Animation(15@) == "WEAPON_THROW"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "FIGHTD_1"
+   not Actor.Animation(15@) == "FIGHTD_2"
+   not Actor.Animation(15@) == "FIGHTD_3"
+   not Actor.Animation(15@) == "FIGHTB_1"
+   not Actor.Animation(15@) == "FIGHTE_1"
+   not Actor.Animation(15@) == "FIGHTC_1"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "CSAW_1"
+   not Actor.Animation(15@) == "SWORD_1"
+   not Actor.Animation(15@) == "THEHULK_3"
+   not Actor.Animation(15@) == "CAR_PULLOUTL_LHS"
+   not Actor.Animation(15@) == "CAR_PULLOUTL_RHS"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "GANG_DRIVEBYLHS"
+   not Actor.Animation(15@) == "GANG_DRIVEBYLHS_BWD"
+   not Actor.Animation(15@) == "GANG_DRIVEBYLHS_FWD"
+   not Actor.Animation(15@) == "GANG_DRIVEBYRHS"
+   not Actor.Animation(15@) == "GANG_DRIVEBYRHS_BWD"
+   not Actor.Animation(15@) == "GANG_DRIVEBYRHS_FWD"
+   not Actor.Animation(15@) == "GANG_DRIVEBYTOP_LHS"
+   not Actor.Animation(15@) == "GANG_DRIVEBYTOP_RHS"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "UZI_CROUCHFIRE"
+   not Actor.Animation(15@) == "RIFLE_CROUCHFIRE"
+   not Actor.Animation(15@) == "SHOTGUN_CROUCHFIRE"
+   not Actor.Animation(15@) == "SILENCE_CROUCHFIRE"
+   not Actor.Animation(15@) == "FIGHTSHB"
+   not Actor.Animation(15@) == "FIGHTSHF"
+   not Actor.Animation(15@) == "FIGHTSH_BWD"
+   not Actor.Animation(15@) == "FIGHTSH_FWD"
+jf @TAMAI_18777 
+if and
+   not Actor.Animation(15@) == "GUNMOVE_BWD"
+   not Actor.Animation(15@) == "GUNMOVE_FWD"
+   not Actor.Animation(15@) == "GUNMOVE_R"
+   not Actor.Animation(15@) == "GUNMOVE_L"
+jf @TAMAI_18777 
+059A:   return_false 
+return 
+
+:TAMAI_18777
+if 
+0104:   actor $PLAYER_ACTOR near_actor 15@ radius 60.0 60.0 60.0 sphere 0 
+jf @TAMAI_18817 
+0485:   return_true 
+return 
+
+:TAMAI_18817
+059A:   return_false 
+return 
+
+:TAMAI_18821
+if 
+  $416 == 1 
+jf @TAMAI_18872 
+if 
+003C:   20@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_18865 
+20@ = -1 
+
+:TAMAI_18865
+jump @TAMAI_19794 
+
+:TAMAI_18872
+if or
+  3@ == -10 
+  3@ == -11 
+  3@ == -12 
+  3@ == -13 
+jf @TAMAI_18918 
+jump @TAMAI_848 
+
+:TAMAI_18918
+if and
+   not $419 == 1 
+  3@ == -20 
+jf @TAMAI_18968 
+if 
+   Player.WantedLevel($PLAYER_CHAR) > 0
+jf @TAMAI_18968 
+jump @TAMAI_848 
+
+:TAMAI_18968
+if 
+  $419 == 1 
+jf @TAMAI_19019 
+if 
+003C:   20@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_19012 
+20@ = -1 
+
+:TAMAI_19012
+jump @TAMAI_19794 
+
+:TAMAI_19019
+jump @TAMAI_19794 
+
+:TAMAI_19026
+if 
+   not Actor.Dead(0@)
+jf @TAMAI_19512 
+if and
+   not Actor.Dead(15@)
+   not Actor.Dead(16@)
+jf @TAMAI_19473 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 15@ with_offset 0.0 0.0 0.0 
+if 
+06BD:   no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 1 particle 0 
+jf @TAMAI_19458 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 16@ with_offset 0.0 0.0 0.0 
+if 
+06BD:   no_obstacles_between $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD solid 1 car 0 actor 0 object 1 particle 0 
+jf @TAMAI_19443 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 15@ with_offset 0.0 0.0 0.0 
+050A: 10@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 16@ with_offset 0.0 0.0 0.0 
+050A: 11@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+if 
+0035:   11@ >= 10@ // (float) 
+jf @TAMAI_19428 
+0085: 16@ = 15@ // (int) 
+jump @TAMAI_19436 
+
+:TAMAI_19428
+0085: 16@ = 16@ // (int) 
+
+:TAMAI_19436
+jump @TAMAI_19451 
+
+:TAMAI_19443
+0085: 16@ = 15@ // (int) 
+
+:TAMAI_19451
+jump @TAMAI_19466 
+
+:TAMAI_19458
+0085: 16@ = 16@ // (int) 
+
+:TAMAI_19466
+jump @TAMAI_19512 
+
+:TAMAI_19473
+if 
+   Actor.Dead(15@)
+jf @TAMAI_19504 
+0085: 16@ = 16@ // (int) 
+jump @TAMAI_19512 
+
+:TAMAI_19504
+0085: 16@ = 15@ // (int) 
+
+:TAMAI_19512
+jump @TAMAI_19794 
+
+:TAMAI_19519
+if 
+056D:   actor 20@ defined 
+jf @TAMAI_24527 
+10@ = Actor.Health(20@)
+if 
+  10@ >= 1 
+jf @TAMAI_24527 
+return 
+
+:TAMAI_19563
+14@ = 0 
+15@ = -1 
+read_memory 17@ 12010640 4 1 
+17@ += 4 
+read_memory 17@ 17@ 4 1 
+return 
+
+:TAMAI_19612
+if or
+   Actor.Dead(20@)
+  26@ >= 0 
+jf @TAMAI_862 
+read_memory 15@ 17@ 1 1 
+17@ += 1 
+if and
+  15@ >= 0 
+  128 > 15@ 
+jf @TAMAI_19794 
+005A: 15@ += 14@ // (int) 
+if 
+803C:   not  0@ == 15@ // (int) 
+jf @TAMAI_19794 
+if 
+056D:   actor 15@ defined 
+jf @TAMAI_19794 
+if 
+   not Actor.Dead(15@)
+jf @TAMAI_19794 
+if 
+80FE:   not actor 15@ sphere 0 in_sphere 0.0 0.0 0.0 radius 20.0 20.0 10000.0 
+jf @TAMAI_19794 
+jump @TAMAI_841 
+
+:TAMAI_19794
+14@ += 256 
+if 
+  14@ > 35584 
+jf @TAMAI_19612 
+26@ = -2 
+if 
+056D:   actor 16@ defined 
+jf @TAMAI_19870 
+if 
+   not Actor.Dead(16@)
+jf @TAMAI_19870 
+0085: 20@ = 16@ // (int) 
+
+:TAMAI_19870
+jump @TAMAI_862 
+return 
+
+:TAMAI_19879
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+   not 4@ > 4 
+jf @TAMAI_20132 
+read_memory $TEMPVAR_FLOAT_1 5499202 2 0 
+if 
+   not $TEMPVAR_FLOAT_1 == 370081 
+jf @TAMAI_20118 
+if 
+0104:   actor 0@ near_actor 20@ radius 10.0 10.0 2.0 sphere 0 
+jf @TAMAI_20111 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -32767 32767 
+if 
+  $TEMPVAR_FLOAT_1 > 0 
+jf @TAMAI_20042 
+$TEMPVAR_FLOAT_1 = 15.0 
+jump @TAMAI_20052 
+
+:TAMAI_20042
+$TEMPVAR_FLOAT_1 = -15.0 
+
+:TAMAI_20052
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset $TEMPVAR_FLOAT_1 -15.0 0.0 
+13@ = 40 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_20111
+jump @TAMAI_20125 
+
+:TAMAI_20118
+jump @TAMAI_20132 
+
+:TAMAI_20125
+jump @TAMAI_20242 
+
+:TAMAI_20132
+if 
+0104:   actor 0@ near_actor 20@ radius 4.0 4.0 2.0 sphere 0 
+jf @TAMAI_20242 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset $TEMPVAR_FLOAT_1 -5.0 0.0 
+13@ = 40 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_20242
+jump @TAMAI_24523 
+
+:TAMAI_20249
+if and
+   not 13@ == 44 
+   not 13@ == 45 
+   not 13@ == 49 
+   not 13@ == 48 
+   not 4@ > 4 
+jf @TAMAI_20488 
+read_memory $TEMPVAR_FLOAT_1 5499202 2 0 
+if 
+   not $TEMPVAR_FLOAT_1 == 370081 
+jf @TAMAI_20481 
+if 
+8104:   not actor 0@ near_actor 20@ radius 20.0 20.0 20.0 sphere 0 
+jf @TAMAI_20481 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -32767 32767 
+if 
+  $TEMPVAR_FLOAT_1 > 0 
+jf @TAMAI_20412 
+$TEMPVAR_FLOAT_1 = 10.0 
+jump @TAMAI_20422 
+
+:TAMAI_20412
+$TEMPVAR_FLOAT_1 = -10.0 
+
+:TAMAI_20422
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 20@ with_offset $TEMPVAR_FLOAT_1 0.0 0.0 
+13@ = 40 
+gosub @TAMAI_25143 
+if 
+   not 12@ == -7 
+jf @TAMAI_24527 
+
+:TAMAI_20481
+jump @TAMAI_20488 
+
+:TAMAI_20488
+jump @TAMAI_24523 
+
+:TAMAI_20495
+if 
+  1@ == 1 
+jf @TAMAI_20813 
+
+:TAMAI_20513
+if 
+89DE:   not actor 0@ entering_car 
+jf @TAMAI_20813 
+0889: store_actor 0@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_20639 
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 72.0 72.0 1000.0 sphere 0 
+jf @TAMAI_20632 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_20632
+jump @TAMAI_20813 
+
+:TAMAI_20639
+if or
+04A9:   actor 0@ driving_heli 
+   Actor.DrivingPlane(0@)
+jf @TAMAI_20740 
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 1000.0 1000.0 1000.0 sphere 0 
+jf @TAMAI_20733 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_20733
+jump @TAMAI_20813 
+
+:TAMAI_20740
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 130.0 130.0 1000.0 sphere 0 
+jf @TAMAI_20813 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_20813
+return 
+
+:TAMAI_20815
+if 
+  1@ == 2 
+jf @TAMAI_20858 
+if 
+  $ONMISSION == 0 
+jf @TAMAI_20858 
+gosub @TAMAI_20513 
+
+:TAMAI_20858
+return 
+
+:TAMAI_20860
+if 
+  1@ == 4 
+jf @TAMAI_21178 
+if 
+89DE:   not actor 0@ entering_car 
+jf @TAMAI_21178 
+0889: store_actor 0@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+if 
+   not Actor.Driving(0@)
+jf @TAMAI_21004 
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 150.0 150.0 1000.0 sphere 0 
+jf @TAMAI_20997 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_20997
+jump @TAMAI_21178 
+
+:TAMAI_21004
+if or
+04A9:   actor 0@ driving_heli 
+   Actor.DrivingPlane(0@)
+jf @TAMAI_21105 
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 1000.0 1000.0 1000.0 sphere 0 
+jf @TAMAI_21098 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_21098
+jump @TAMAI_21178 
+
+:TAMAI_21105
+if and
+80C2:   not sphere_onscreen $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 5.0 
+8104:   not actor $PLAYER_ACTOR near_actor 0@ radius 200.0 200.0 1000.0 sphere 0 
+jf @TAMAI_21178 
+gosub @TAMAI_28206 
+Actor.DestroyInstantly(0@)
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_21178
+return 
+
+:TAMAI_21180
+if 
+856D:   not actor 0@ defined 
+jf @TAMAI_21205 
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_21205
+if 
+003C:   $420 == 0@ // (int) 
+jf @TAMAI_21240 
+$420 = 0 
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_21240
+if or
+   not Player.Defined($PLAYER_CHAR)
+856D:   not actor $PLAYER_ACTOR defined 
+jf @TAMAI_21296 
+wait 6000 
+if or
+   not Player.Defined($PLAYER_CHAR)
+856D:   not actor $PLAYER_ACTOR defined 
+jf @TAMAI_21296 
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_21296
+return 
+
+:TAMAI_21298
+Marker.Disable(21@)
+Object.Destroy(29@)
+if or
+   not 7@ >= -16 
+  7@ > 16 
+jf @TAMAI_21338 
+061B: remove_references_to_AS_pack 7@ 
+
+:TAMAI_21338
+if or
+  22@ > 16 
+   not 22@ >= -16 
+jf @TAMAI_21368 
+065C: release_decision_maker 22@ 
+
+:TAMAI_21368
+if and
+  $411 > 0.0 
+   not $411 >= 10.0 
+jf @TAMAI_21413 
+$412 -= 1 
+$413 -= 1 
+
+:TAMAI_21413
+return 
+
+:TAMAI_21415
+if 
+056D:   actor 0@ defined 
+jf @TAMAI_22414 
+if 
+   Actor.Dead(0@)
+jf @TAMAI_21454 
+jump @TAMAI_22191 
+
+:TAMAI_21454
+9@ = Actor.Health(0@)
+if 
+   not 9@ > 1 
+jf @TAMAI_22412 
+Actor.Health(0@) = 100
+wait 0 
+if 
+056D:   actor 0@ defined 
+jf @TAMAI_22414 
+7@ = 0 
+if 
+   Actor.Animation(0@) == "KD_LEFT"
+jf @TAMAI_21546 
+7@ = 1 
+
+:TAMAI_21546
+if 
+   Actor.Animation(0@) == "KD_RIGHT"
+jf @TAMAI_21579 
+7@ = 2 
+
+:TAMAI_21579
+if 
+   Actor.Animation(0@) == "KO_SHOT_FACE"
+jf @TAMAI_21616 
+7@ = 3 
+
+:TAMAI_21616
+if 
+   Actor.Animation(0@) == "KO_SHOT_FRONT"
+jf @TAMAI_21654 
+7@ = 4 
+
+:TAMAI_21654
+if 
+   Actor.Animation(0@) == "KO_SKID_BACK"
+jf @TAMAI_21691 
+7@ = 5 
+
+:TAMAI_21691
+if 
+   Actor.Animation(0@) == "KO_SKID_FRONT"
+jf @TAMAI_21729 
+7@ = 6 
+
+:TAMAI_21729
+if 
+   Actor.Animation(0@) == "KO_SPIN_L"
+jf @TAMAI_21763 
+7@ = 7 
+
+:TAMAI_21763
+if 
+   Actor.Animation(0@) == "KO_SPIN_R"
+jf @TAMAI_21797 
+7@ = 8 
+
+:TAMAI_21797
+0555: remove_weapon 31 from_actor 0@ 
+gosub @TAMAI_28206 
+if 
+  7@ == 0 
+jf @TAMAI_21861 
+0829: actor 0@ perform_animation "KO_SKID_FRONT" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_21861
+if 
+  7@ == 1 
+jf @TAMAI_21905 
+0829: actor 0@ perform_animation "KD_LEFT" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_21905
+if 
+  7@ == 2 
+jf @TAMAI_21950 
+0829: actor 0@ perform_animation "KD_RIGHT" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_21950
+if 
+  7@ == 3 
+jf @TAMAI_21999 
+0829: actor 0@ perform_animation "KO_SHOT_FACE" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_21999
+if 
+  7@ == 4 
+jf @TAMAI_22049 
+0829: actor 0@ perform_animation "KO_SKID_FRONT" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_22049
+if 
+  7@ == 5 
+jf @TAMAI_22099 
+0829: actor 0@ perform_animation "KO_SKID_FRONT" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_22099
+if 
+  7@ == 6 
+jf @TAMAI_22145 
+0829: actor 0@ perform_animation "KO_SPIN_L" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_22145
+if 
+  7@ == 7 
+jf @TAMAI_22191 
+0829: actor 0@ perform_animation "KO_SPIN_R" IFP_file "PED" 4.0 time 0 and_dies 
+
+:TAMAI_22191
+gosub @TAMAI_21298 
+if 
+056D:   actor 0@ defined 
+jf @TAMAI_22265 
+if 
+   Actor.Driving(0@)
+jf @TAMAI_22265 
+10@ = Actor.CurrentCar(0@)
+Car.SetDriverBehaviour(10@, CarMission.None)
+00AE: set_car 10@ traffic_behaviour_to 2 
+06C7: AS_actor 0@ driver_of_car 10@ perform_action 7 timelimit 3000 
+
+:TAMAI_22265
+if 
+  1@ == 1 
+jf @TAMAI_22295 
+wait 5000 
+Actor.DestroyWithFade(0@)
+terminate_this_script 
+
+:TAMAI_22295
+if 
+  1@ == 2 
+jf @TAMAI_22350 
+
+:TAMAI_22313
+   not $ONMISSION == 0 
+jf @TAMAI_22338 
+wait 0 
+jump @TAMAI_22313 
+
+:TAMAI_22338
+wait 5000 
+Actor.DestroyWithFade(0@)
+terminate_this_script 
+
+:TAMAI_22350
+if 
+  1@ == 3 
+jf @TAMAI_22380 
+wait 5000 
+Actor.DestroyWithFade(0@)
+terminate_this_script 
+
+:TAMAI_22380
+if 
+  1@ == 4 
+jf @TAMAI_22410 
+wait 5000 
+Actor.DestroyWithFade(0@)
+terminate_this_script 
+
+:TAMAI_22410
+terminate_this_script 
+
+:TAMAI_22412
+return 
+
+:TAMAI_22414
+gosub @TAMAI_21298 
+terminate_this_script 
+
+:TAMAI_22423
+if 
+803B:   not  0@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_22536 
+087F: set_actor 0@ never_leave_group 0 
+06C9: remove_actor 0@ from_group 
+08ED: remove_actor 0@ from_dialogue_mode 
+0489: set_actor 0@ muted 1 
+04D8: set_actor 0@ drowns_in_water 0 
+0946: set_actor 0@ actions_uninterupted_by_weapon_fire 1 
+0961: set_actor 0@ keep_tasks_after_cleanup 1 
+0982: set_actor 0@ stay_in_car_when_dead 1 
+077C: clear_actor 0@ acquaintance 0 to_all_pedtypes // see ped.dat 
+077C: clear_actor 0@ acquaintance 1 to_all_pedtypes // see ped.dat 
+077C: clear_actor 0@ acquaintance 2 to_all_pedtypes // see ped.dat 
+077C: clear_actor 0@ acquaintance 3 to_all_pedtypes // see ped.dat 
+077C: clear_actor 0@ acquaintance 4 to_all_pedtypes // see ped.dat 
+09B5: set_actor 0@ signal_after_kill 0 
+
+:TAMAI_22536
+Object.Create(29@, 1318, 0, 0, 0)
+Object.KeepInMemory(29@, True)
+Object.CollisionDetection(29@, False)
+0750: set_object 29@ visibility 0 
+Actor.StorePos(0@, 23@, 24@, 25@)
+26@ = 0 
+22@ = 0 
+Marker.CreateAboveActor(21@, 0@)
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_1 
+if and
+   not 3@ == -20 
+   not 3@ == 0 
+jf @TAMAI_22715 
+018B: set_marker 21@ radar_mode 2 
+if or
+  3@ == -15 
+  3@ == -21 
+  $TEMPVAR_FLOAT_1 == 26 
+003B:   4@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_22708 
+07E0: set_marker 21@ type_to 1 
+0770: set_actor 0@ target_priority 0 
+0568: set_actor 0@ untargetable 1 
+
+:TAMAI_22708
+jump @TAMAI_22720 
+
+:TAMAI_22715
+Marker.Disable(21@)
+
+:TAMAI_22720
+060F: set_actor 0@ melee_accuracy_to 100.0 
+13@ = 0 
+039E: set_actor 0@ locked 1 while_in_car 
+0526: set_actor 0@ stay_in_car_when_jacked 1 
+060B: set_actor 0@ decision_maker_to 32 
+18@ = 0 
+get_ped_pointer $TEMPVAR_FLOAT_1 0@ 
+$TEMPVAR_FLOAT_1 += 1350 
+write_memory $TEMPVAR_FLOAT_1 4 1350 1 
+read_memory $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_1 4 0 
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+08E5: get_actor_in_sphere $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius 1.0 handle_as 10@ 
+if 
+003B:   0@ == 10@ // (int) 
+jf @TAMAI_22871 
+1@ = 1 
+jump @TAMAI_22876 
+
+:TAMAI_22871
+Actor.RemoveReferences(10@)
+
+:TAMAI_22876
+if 
+  1@ == 2 
+jf @TAMAI_22899 
+Actor.RemoveFromMissionCleanupList(0@)
+
+:TAMAI_22899
+if 
+   Actor.DrivingPlane(0@)
+jf @TAMAI_23136 
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+$TEMPVAR_Z_COORD += 120.0 
+0819: $TEMPVAR_FLOAT_3 = actor 0@ distance_from_ground 
+if 
+   not $TEMPVAR_FLOAT_3 >= 80.0 
+jf @TAMAI_23136 
+03CD: disable_car $TEMPVAR_FLOAT_1 stuck_check 
+0742: set_plane $TEMPVAR_FLOAT_1 unknown_trajectory 1.5 
+0745: set_hydra $TEMPVAR_FLOAT_1 thrust_to_horizontal 
+08E6: set_plane $TEMPVAR_FLOAT_1 landing_gear 0 
+if 
+gosub @TAMAI_19519 
+jf @TAMAI_23029 
+0710: plane $TEMPVAR_FLOAT_1 follow_actor 20@ follow_car -1 radius 120.0 
+jump @TAMAI_23059 
+
+:TAMAI_23029
+04D2: set_plane $TEMPVAR_FLOAT_1 fly_autopilot_around_point 0.0 0.0 100.0 altitude_between 120.0 and 150.0 
+
+:TAMAI_23059
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+Car.StorePos($TEMPVAR_FLOAT_1, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+02CE: $TEMPVAR_Z_COORD = ground_z_at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+$TEMPVAR_Z_COORD += 66.0 
+Car.PutAt($TEMPVAR_FLOAT_1, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.SetSpeedInstantly($TEMPVAR_FLOAT_1, 2.0)
+return 
+
+:TAMAI_23136
+return 
+
+:TAMAI_23138
+if and
+   not Actor.Animation(0@) == "COLT45_RELOAD"
+   not Actor.Animation(0@) == "SILENCED_RELOAD"
+   not Actor.Animation(0@) == "PYTHON_RELOAD"
+   not Actor.Animation(0@) == "BUDDY_RELOAD"
+   not Actor.Animation(0@) == "UZI_RELOAD"
+   not Actor.Animation(0@) == "TEC_RELOAD"
+   not Actor.Animation(0@) == "RIFLE_LOAD"
+jf @TAMAI_24527 
+jump @TAMAI_24523 
+
+:TAMAI_23288
+if and
+   not Actor.Animation(0@) == "HITA_1"
+   not Actor.Animation(0@) == "HITA_2"
+   not Actor.Animation(0@) == "HITA_3"
+   not Actor.Animation(0@) == "HIT_BEHIND"
+   not Actor.Animation(0@) == "HIT_BACK"
+   not Actor.Animation(0@) == "HIT_FRONT"
+   not Actor.Animation(0@) == "HIT_L"
+   not Actor.Animation(0@) == "HIT_R"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "ABSEIL"
+   not Actor.Animation(0@) == "ARRESTGUN"
+   not Actor.Animation(0@) == "EV_DIVE"
+   not Actor.Animation(0@) == "EV_STEP"
+   not Actor.Animation(0@) == "FALL_GLIDE"
+   not Actor.Animation(0@) == "GETUP"
+   not Actor.Animation(0@) == "GETUP_FRONT"
+   not Actor.Animation(0@) == "HIT_GUN_BUTT"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "TURN_L"
+   not Actor.Animation(0@) == "TURN_R"
+   not Actor.Animation(0@) == "TURN_180"
+   not Actor.Animation(0@) == "FALL_FALL"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "KILL_KNIFE_PED_DAMAGE"
+   not Actor.Animation(0@) == "KILL_KNIFE_PLAYER"
+   not Actor.Animation(0@) == "FIGHTC_2"
+jf @TAMAI_24527 
+jump @TAMAI_24523 
+
+:TAMAI_23697
+if and
+   not Actor.Animation(0@) == "CAR_ALIGN_LHS"
+   not Actor.Animation(0@) == "CAR_ALIGN_RHS"
+   not Actor.Animation(0@) == "CAR_CLOSE_LHS"
+   not Actor.Animation(0@) == "CAR_CLOSE_RHS"
+   not Actor.Animation(0@) == "CAR_CRAWLOUTRHS"
+   not Actor.Animation(0@) == "CAR_DOORLOCKED_LHS"
+   not Actor.Animation(0@) == "CAR_DOORLOCKED_RHS"
+   not Actor.Animation(0@) == "CAR_GETINL_LHS"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "CAR_GETINL_RHS"
+   not Actor.Animation(0@) == "CAR_GETIN_LHS"
+   not Actor.Animation(0@) == "CAR_GETIN_RHS"
+   not Actor.Animation(0@) == "CAR_JACKEDLHS"
+   not Actor.Animation(0@) == "CAR_JACKEDRHS"
+   not Actor.Animation(0@) == "CAR_JUMPIN_LHS"
+   not Actor.Animation(0@) == "CAR_LJACKEDLHS"
+   not Actor.Animation(0@) == "CAR_LJACKEDRHS"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "CAR_LSHUFFLE_RHS"
+   not Actor.Animation(0@) == "CAR_OPEN_LHS"
+   not Actor.Animation(0@) == "CAR_OPEN_RHS"
+   not Actor.Animation(0@) == "CAR_PULLOUTL_LHS"
+   not Actor.Animation(0@) == "CAR_PULLOUTL_RHS"
+   not Actor.Animation(0@) == "CAR_PULLOUT_LHS"
+   not Actor.Animation(0@) == "CAR_PULLOUT_RHS"
+   not Actor.Animation(0@) == "CAR_QJACKED"
+jf @TAMAI_24527 
+if and
+89DE:   not actor 0@ entering_car 
+   not Actor.Animation(0@) == "CAR_ROLLOUT_LHS"
+   not Actor.Animation(0@) == "CAR_ROLLOUT_RHS"
+jf @TAMAI_24527 
+jump @TAMAI_24523 
+
+:TAMAI_24303
+if and
+   not Actor.Animation(0@) == "FALL_GLIDE"
+   not Actor.Animation(0@) == "FALL_LAND"
+   not Actor.Animation(0@) == "FLEE_LKAROUND_01"
+jf @TAMAI_24527 
+if and
+   not Actor.Animation(0@) == "CLIMB_IDLE"
+   not Actor.Animation(0@) == "CLIMB_JUMP"
+   not Actor.Animation(0@) == "CLIMB_JUMP2FALL"
+   not Actor.Animation(0@) == "CLIMB_JUMP_B"
+   not Actor.Animation(0@) == "CLIMB_PULL"
+   not Actor.Animation(0@) == "CLIMB_STAND"
+   not Actor.Animation(0@) == "CLIMB_STAND_FINISH"
+jf @TAMAI_24527 
+jump @TAMAI_24523 
+
+:TAMAI_24523
+0485:   return_true 
+return 
+
+:TAMAI_24527
+059A:   return_false 
+return 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -30 30 
+
+:TAMAI_24540
+if or
+  $TEMPVAR_FLOAT_1 > 10 
+   not $TEMPVAR_FLOAT_1 >= 10 
+jf @TAMAI_24572 
+jump @TAMAI_24579 
+
+:TAMAI_24572
+jump @TAMAI_24540 
+
+:TAMAI_24579
+$TEMPVAR_FLOAT_1 *= 2 
+
+:TAMAI_24586
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -20 20 
+008F: $TEMPVAR_FLOAT_1 = integer $TEMPVAR_FLOAT_1 to_float 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor 0@ with_offset $TEMPVAR_FLOAT_1 120.0 0.0 
+03D3: get_route_nearest_for $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD store_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD Z_angle_to $TEMPVAR_ANGLE 
+jump @TAMAI_25143 
+
+:TAMAI_24660
+get_target_blip_coords $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+jump @TAMAI_25143 
+12@ = -7 
+return 
+
+:TAMAI_24687
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_1 
+if or
+  3@ == -15 
+  3@ == -21 
+  $TEMPVAR_FLOAT_1 == 26 
+003B:   4@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_24960 
+if and
+056D:   actor 20@ defined 
+803B:   not  20@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_24811 
+if 
+   not Actor.Dead(20@)
+jf @TAMAI_24811 
+if 
+8104:   not actor $PLAYER_ACTOR near_actor 20@ radius 1.7 1.7 1.7 sphere 0 
+jf @TAMAI_24960 
+
+:TAMAI_24811
+10@ = 1 
+
+:TAMAI_24818
+0093: 12@ = integer 10@ to_float 
+if and
+   Actor.Stopped($PLAYER_ACTOR)
+   Actor.Stopped(0@)
+jf @TAMAI_24864 
+$TEMPVAR_ANGLE = 0.6 
+jump @TAMAI_24874 
+
+:TAMAI_24864
+$TEMPVAR_ANGLE = 1.2 
+
+:TAMAI_24874
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 12@ 0.0 
+if 
+80FE:   not actor $PLAYER_ACTOR sphere 0 in_sphere $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius $TEMPVAR_ANGLE $TEMPVAR_ANGLE 100.0 
+jf @TAMAI_25027 
+10@ += 1 
+  10@ > 60 
+jf @TAMAI_24818 
+
+:TAMAI_24960
+0209: $TEMPVAR_ANGLE = random_int_in_ranges 0 2000 
+if 
+  $TEMPVAR_ANGLE > 1000 
+jf @TAMAI_25027 
+Actor.StorePos(20@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+0668: AS_actor 0@ rotate_and_shoot_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 3000 ms 
+jump @TAMAI_24523 
+
+:TAMAI_25027
+Actor.StorePos(20@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+0667: AS_actor 0@ aim_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 3000 ms 
+jump @TAMAI_24527 
+
+:TAMAI_25065
+return 
+if 
+   Actor.DrivingPlane(0@)
+jf @TAMAI_25141 
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+0819: $TEMPVAR_FLOAT_3 = actor 0@ distance_from_ground 
+if 
+  $TEMPVAR_FLOAT_3 > 20.0 
+jf @TAMAI_25134 
+08E6: set_plane $TEMPVAR_FLOAT_1 landing_gear 0 
+jump @TAMAI_25141 
+
+:TAMAI_25134
+08E6: set_plane $TEMPVAR_FLOAT_1 landing_gear 1 
+
+:TAMAI_25141
+return 
+
+:TAMAI_25143
+if 
+   not 2@ == 5 
+jf @TAMAI_24523 
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+0085: $TEMPVAR_FLOAT_2 = 19@ // (int) 
+$TEMPVAR_FLOAT_2 += 500 
+if 
+001D:   $TEMPVAR_FLOAT_1 > $TEMPVAR_FLOAT_2 // (int) 
+jf @TAMAI_24523 
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+092E: get_water_height_at $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 ignore_waves 0 store_to 10@ 
+10@ += 0.25 
+if 
+0025:   10@ > $TEMPVAR_FLOAT_3 // (float) 
+jf @TAMAI_25298 
+gosub @TAMAI_28206 
+07E1: AS_actor 0@ swim_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+0A28: set_actor 0@ swimming_speed_to 2.5 
+19@ = -600 
+return 
+
+:TAMAI_25298
+if 
+   Actor.Driving(0@)
+jf @TAMAI_26211 
+$TEMPVAR_FLOAT_1 = Actor.CurrentCar(0@)
+0085: $TEMPVAR_ACTOR_CAR = $TEMPVAR_FLOAT_1 // (int) 
+if 
+   not Car.Wrecked($TEMPVAR_FLOAT_1)
+jf @TAMAI_26211 
+046C: $TEMPVAR_FLOAT_2 = car $TEMPVAR_FLOAT_1 driver 
+if 
+003B:   $TEMPVAR_FLOAT_2 == 0@ // (int) 
+jf @TAMAI_26209 
+if and
+0975:   car $TEMPVAR_FLOAT_1 emergency_vehicle 
+   not is_car_siren_on $TEMPVAR_FLOAT_1 
+056D:   actor 20@ defined 
+jf @TAMAI_25406 
+0397: enable_car $TEMPVAR_FLOAT_1 siren 1 
+
+:TAMAI_25406
+060B: set_actor 0@ decision_maker_to 1 
+if 
+04A9:   actor 0@ driving_heli 
+jf @TAMAI_25478 
+$TEMPVAR_Z_COORD += 30.0 
+04A2: set_heli $TEMPVAR_FLOAT_1 fly_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD altitude_between 40.0 and 50.0 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+return 
+
+:TAMAI_25478
+if 
+   Actor.DrivingPlane(0@)
+jf @TAMAI_25834 
+Car.SetImmunities($TEMPVAR_FLOAT_1, False, False, False, False, True)
+$TEMPVAR_Z_COORD += 120.0 
+0819: $TEMPVAR_FLOAT_3 = actor 0@ distance_from_ground 
+if 
+   not $TEMPVAR_FLOAT_3 >= 80.0 
+jf @TAMAI_25716 
+03CD: disable_car $TEMPVAR_FLOAT_1 stuck_check 
+0742: set_plane $TEMPVAR_FLOAT_1 unknown_trajectory 1.5 
+0745: set_hydra $TEMPVAR_FLOAT_1 thrust_to_horizontal 
+08E6: set_plane $TEMPVAR_FLOAT_1 landing_gear 0 
+if 
+gosub @TAMAI_19519 
+jf @TAMAI_25615 
+0710: plane $TEMPVAR_FLOAT_1 follow_actor 20@ follow_car -1 radius 100.0 
+jump @TAMAI_25639 
+
+:TAMAI_25615
+04D2: set_plane $TEMPVAR_FLOAT_1 fly_autopilot_around_point $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD altitude_between 120.0 and 150.0 
+
+:TAMAI_25639
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+Car.StorePos($TEMPVAR_FLOAT_1, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+02CE: $TEMPVAR_Z_COORD = ground_z_at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+$TEMPVAR_Z_COORD += 66.0 
+Car.PutAt($TEMPVAR_FLOAT_1, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.SetSpeedInstantly($TEMPVAR_FLOAT_1, 2.0)
+return 
+
+:TAMAI_25716
+$TEMPVAR_Z_COORD += 60.0 
+03A2: set_car $TEMPVAR_FLOAT_1 action 3 
+0742: set_plane $TEMPVAR_FLOAT_1 unknown_trajectory 1.5 
+0745: set_hydra $TEMPVAR_FLOAT_1 thrust_to_horizontal 
+08E6: set_plane $TEMPVAR_FLOAT_1 landing_gear 0 
+if 
+gosub @TAMAI_19519 
+jf @TAMAI_25795 
+0710: plane $TEMPVAR_FLOAT_1 follow_actor 20@ follow_car -1 radius 100.0 
+jump @TAMAI_25819 
+
+:TAMAI_25795
+04D2: set_plane $TEMPVAR_FLOAT_1 fly_autopilot_around_point $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD altitude_between 120.0 and 150.0 
+
+:TAMAI_25819
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+return 
+
+:TAMAI_25834
+if 
+04A7:   actor 0@ driving_boat 
+jf @TAMAI_25896 
+02D3: boat $TEMPVAR_FLOAT_1 sail_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+00AE: set_car $TEMPVAR_FLOAT_1 traffic_behaviour_to 2 
+02DB: set_boat $TEMPVAR_FLOAT_1 speed_to 50.0 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+return 
+
+:TAMAI_25896
+if 
+09AE:   actor 0@ driving_train 
+jf @TAMAI_25954 
+06DC: set_train $TEMPVAR_FLOAT_1 acc 20.0 
+06DD: set_train $TEMPVAR_FLOAT_1 speed 20.0 
+09CF: set_train $TEMPVAR_FLOAT_1 stop_at_stations 1 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+return 
+
+:TAMAI_25954
+gosub @TAMAI_28206 
+Car.SetDriverBehaviour($TEMPVAR_FLOAT_1, CarMission.Cruise)
+00AE: set_car $TEMPVAR_FLOAT_1 traffic_behaviour_to 2 
+0423: set_car $TEMPVAR_FLOAT_1 improved_handling_to 2.0 // (float) 
+Car.SetDriverBehaviour($TEMPVAR_FLOAT_1, CarMission.Cruise)
+04E0: car $TEMPVAR_FLOAT_1 abandon_path_radius 50 
+01BD: 19@ = current_time_in_ms 
+19@ += 2000 
+if 
+056D:   actor 20@ defined 
+jf @TAMAI_26114 
+if 
+   not Actor.Dead(20@)
+jf @TAMAI_26079 
+05D1: AS_actor 0@ drive_car $TEMPVAR_FLOAT_1 to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD speed 40.0 1 model 0 2 
+jump @TAMAI_26107 
+
+:TAMAI_26079
+05D1: AS_actor 0@ drive_car $TEMPVAR_FLOAT_1 to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD speed 12.0 1 model 0 0 
+
+:TAMAI_26107
+jump @TAMAI_26209 
+
+:TAMAI_26114
+if or
+  18@ == 59 
+  18@ == 60 
+jf @TAMAI_26181 
+05D1: AS_actor 0@ drive_car $TEMPVAR_FLOAT_1 to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD speed 40.0 1 model 0 2 
+0397: enable_car $TEMPVAR_FLOAT_1 siren 1 
+jump @TAMAI_26209 
+
+:TAMAI_26181
+05D1: AS_actor 0@ drive_car $TEMPVAR_FLOAT_1 to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD speed 12.0 1 model 0 0 
+
+:TAMAI_26209
+return 
+
+:TAMAI_26211
+01BD: $TEMPVAR_FLOAT_1 = current_time_in_ms 
+0085: $TEMPVAR_FLOAT_2 = 19@ // (int) 
+$TEMPVAR_FLOAT_2 += 500 
+if 
+001D:   $TEMPVAR_FLOAT_1 > $TEMPVAR_FLOAT_2 // (int) 
+jf @TAMAI_24527 
+if or
+  13@ == 40 
+  13@ == 39 
+  13@ == 44 
+  13@ == 45 
+  13@ == 49 
+  13@ == 48 
+jf @TAMAI_27005 
+if 
+gosub @TAMAI_30400 
+jf @TAMAI_26340 
+if 
+gosub @TAMAI_30831 
+jf @TAMAI_24527 
+
+:TAMAI_26340
+if 
+gosub @TAMAI_23138 
+jf @TAMAI_27005 
+read_memory $TEMPVAR_FLOAT_1 5499202 2 0 
+if 
+   not $TEMPVAR_FLOAT_1 == 370081 
+jf @TAMAI_27005 
+if 
+gosub @TAMAI_32454 
+jf @TAMAI_26991 
+if 
+056D:   actor 20@ defined 
+jf @TAMAI_26826 
+if 
+   not Actor.Dead(20@)
+jf @TAMAI_26719 
+if 
+gosub @TAMAI_29414 
+jf @TAMAI_26634 
+if 
+gosub @TAMAI_29134 
+jf @TAMAI_26549 
+gosub @TAMAI_28321 
+gosub @TAMAI_28790 
+0637: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 4 turn_radius 0.5 stop_radius 1.0 look_at_actor 20@ 
+01BD: 19@ = current_time_in_ms 
+19@ += 1250 
+gosub @TAMAI_29034 
+jump @TAMAI_26627 
+
+:TAMAI_26549
+gosub @TAMAI_28321 
+gosub @TAMAI_28790 
+06C2: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 6 turn_radius 0.5 stop_radius 1.0 actor 20@ with_offset 0.0 0.0 0.0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1250 
+gosub @TAMAI_29034 
+
+:TAMAI_26627
+jump @TAMAI_26712 
+
+:TAMAI_26634
+gosub @TAMAI_28321 
+gosub @TAMAI_28790 
+06C2: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 6 turn_radius 0.5 stop_radius 1.0 actor 20@ with_offset 0.0 0.0 0.0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1250 
+gosub @TAMAI_29034 
+
+:TAMAI_26712
+jump @TAMAI_26819 
+
+:TAMAI_26719
+gosub @TAMAI_28321 
+gosub @TAMAI_28790 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 2.0 16.0 1.0 
+06C2: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 6 turn_radius 0.5 stop_radius 0.5 actor -1 with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+01BD: 19@ = current_time_in_ms 
+19@ += 1250 
+gosub @TAMAI_29034 
+
+:TAMAI_26819
+jump @TAMAI_26833 
+
+:TAMAI_26826
+jump @TAMAI_26719 
+
+:TAMAI_26833
+if 
+   not Actor.Dead(0@)
+jf @TAMAI_26982 
+0393: actor 0@ perform_animation "GUNMOVE_L" at 2.4 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_R" at 2.4 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_BWD" at 2.4 times_normal_rate 
+0393: actor 0@ perform_animation "GUNMOVE_FWD" at 2.4 times_normal_rate 
+0393: actor 0@ perform_animation "SWIM_BREAST" at 2.4 times_normal_rate 
+0393: actor 0@ perform_animation "SWIM_CRAWL" at 2.4 times_normal_rate 
+
+:TAMAI_26982
+return 
+jump @TAMAI_26998 
+
+:TAMAI_26991
+13@ = 41 
+
+:TAMAI_26998
+jump @TAMAI_27005 
+
+:TAMAI_27005
+if or
+  13@ == 41 
+  13@ == 42 
+  13@ == 43 
+  13@ == 0 
+  13@ == 155 
+  13@ == 156 
+  13@ == 157 
+  13@ == 152 
+jf @TAMAI_28073 
+gosub @TAMAI_28206 
+if and
+   not Actor.Model(0@) == 163
+   not Actor.Model(0@) == 298
+80FE:   not actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 20.0 20.0 20.0 
+jf @TAMAI_27555 
+10@ = 0 
+
+:TAMAI_27148
+Actor.StorePos(0@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+get_random_car_in_sphere_no_save_recursive 11@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 40.0 1 1 
+if 
+   not Car.Wrecked(11@)
+jf @TAMAI_27516 
+09B3: get_car 11@ door_status $TEMPVAR_FLOAT_2 
+if and
+   not $TEMPVAR_FLOAT_2 == 1 
+   not $TEMPVAR_FLOAT_2 == 2 
+   not $TEMPVAR_FLOAT_2 == 4 
+jf @TAMAI_27516 
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+if 
+   Actor.Dead($TEMPVAR_FLOAT_1)
+jf @TAMAI_27355 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_27348 
+07A1: set_walk_speed 6 
+05CB: AS_actor 0@ enter_car 11@ as_driver -1 ms 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24523 
+
+:TAMAI_27348
+jump @TAMAI_27516 
+
+:TAMAI_27355
+046C: $TEMPVAR_FLOAT_1 = car 11@ driver 
+089F: get_actor $TEMPVAR_FLOAT_1 pedtype_to $TEMPVAR_FLOAT_2 
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_3 
+if 
+003B:   $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_27516 
+01E9: $TEMPVAR_FLOAT_2 = car 11@ num_passengers 
+01EA: $TEMPVAR_FLOAT_3 = car 11@ max_passengers 
+if 
+803B:   not  $TEMPVAR_FLOAT_2 == $TEMPVAR_FLOAT_3 // (int) 
+jf @TAMAI_27516 
+Car.StorePos(11@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+$TEMPVAR_FLOAT_3 += 4.0 
+if 
+gosub @TAMAI_30075 
+jf @TAMAI_27516 
+07A1: set_walk_speed 6 
+0430: put_actor 0@ into_car 11@ passenger_seat -1 
+TIMERB = 0 
+01BD: 19@ = current_time_in_ms 
+19@ += 1700 
+jump @TAMAI_24523 
+
+:TAMAI_27516
+10@ += 1 
+  10@ > 40 
+jf @TAMAI_27148 
+if 
+  18@ == 59 
+jf @TAMAI_27555 
+
+:TAMAI_27555
+gosub @TAMAI_28206 
+if 
+gosub @TAMAI_30013 
+jf @TAMAI_27681 
+07A1: set_walk_speed 7 
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_27656 
+if and
+8597:   not actor 0@ crouching 
+0597:   actor 4@ crouching 
+jf @TAMAI_27628 
+04EB: AS_actor 0@ crouch 1 
+
+:TAMAI_27628
+if and
+0597:   actor 0@ crouching 
+8597:   not actor 4@ crouching 
+jf @TAMAI_27656 
+04EB: AS_actor 0@ crouch 0 
+
+:TAMAI_27656
+05D3: AS_actor 0@ goto_point $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 7 time -2 ms // versionA 
+jump @TAMAI_27775 
+
+:TAMAI_27681
+07A1: set_walk_speed 7 
+if 
+   not Actor.Dead(4@)
+jf @TAMAI_27757 
+if and
+8597:   not actor 0@ crouching 
+0597:   actor 4@ crouching 
+jf @TAMAI_27729 
+04EB: AS_actor 0@ crouch 1 
+
+:TAMAI_27729
+if and
+0597:   actor 0@ crouching 
+8597:   not actor 4@ crouching 
+jf @TAMAI_27757 
+04EB: AS_actor 0@ crouch 0 
+
+:TAMAI_27757
+0603: AS_actor 0@ goto_point_any_means $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 7 use_car -2 
+
+:TAMAI_27775
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 10.0 10.0 10.0 
+jf @TAMAI_27832 
+01BD: 19@ = current_time_in_ms 
+19@ += 500 
+return 
+
+:TAMAI_27832
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 20.0 20.0 20.0 
+jf @TAMAI_27889 
+01BD: 19@ = current_time_in_ms 
+19@ += 1000 
+return 
+
+:TAMAI_27889
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 30.0 30.0 30.0 
+jf @TAMAI_27946 
+01BD: 19@ = current_time_in_ms 
+19@ += 1500 
+return 
+
+:TAMAI_27946
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 40.0 40.0 40.0 
+jf @TAMAI_28003 
+01BD: 19@ = current_time_in_ms 
+19@ += 2500 
+return 
+
+:TAMAI_28003
+if 
+00FE:   actor 0@ sphere 0 in_sphere $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD radius 50.0 50.0 50.0 
+jf @TAMAI_28060 
+01BD: 19@ = current_time_in_ms 
+19@ += 3000 
+return 
+
+:TAMAI_28060
+01BD: 19@ = current_time_in_ms 
+19@ += 6000 
+
+:TAMAI_28073
+return 
+04C4: store_coords_to 10@ 11@ 12@ from_actor 1@ with_offset 0.0 0.0 0.0 
+Actor.StorePos(0@, 13@, 14@, 15@)
+0063: 13@ -= 10@ // (float) 
+0063: 14@ -= 11@ // (float) 
+0604: get_Z_angle_for_point 13@ 14@ store_to 15@ 
+15@ += 180.0 
+0656: get_angle 15@ absolute_degrees_to 15@ 
+cleo_return 1 15@ 
+0812: AS_actor 0@ perform_animation "FIGHTA_2" IFP "PED" framedelta 8.0 loopA 1 lockX 1 lockY 1 lockF 1 time -1 // versionB 
+
+:TAMAI_28206
+06C9: remove_actor 0@ from_group 
+if and
+   not Actor.Driving(0@)
+8965:   not actor 0@ swimming 
+8A32:   not actor 0@ on_turret_of_car 
+jf @TAMAI_28314 
+if 
+0597:   actor 0@ crouching 
+jf @TAMAI_28287 
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+04EB: AS_actor 0@ crouch 1 
+jump @TAMAI_28307 
+
+:TAMAI_28287
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+
+:TAMAI_28307
+jump @TAMAI_28319 
+
+:TAMAI_28314
+0687: clear_actor 0@ task 
+
+:TAMAI_28319
+return 
+
+:TAMAI_28321
+06C9: remove_actor 0@ from_group 
+if and
+   not Actor.Driving(0@)
+8965:   not actor 0@ swimming 
+8A32:   not actor 0@ on_turret_of_car 
+jf @TAMAI_28379 
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+0687: clear_actor 0@ task 
+0792: disembark_instantly_actor 0@ 
+jump @TAMAI_28384 
+
+:TAMAI_28379
+0687: clear_actor 0@ task 
+
+:TAMAI_28384
+return 
+0470: 10@ = actor 0@ current_weapon 
+01B9: set_actor 0@ armed_weapon_to 0 
+06C2: AS_actor 0@ goto 0.0 0.0 0.0 mode 4 turn_radius 1.0 stop_radius 1.0 actor 0@ with_offset 0.0 0.0 0.0 
+0792: disembark_instantly_actor 0@ 
+01B9: set_actor 0@ armed_weapon_to 10@ 
+cleo_return 0 
+0209: $TEMPVAR_FLOAT_3 = random_int_in_ranges 0 4 
+if 
+  $TEMPVAR_FLOAT_3 == 0 
+jf @TAMAI_28516 
+$TEMPVAR_FLOAT_1 = 3.0 
+$TEMPVAR_FLOAT_2 = 0.0 
+
+:TAMAI_28516
+if 
+  $TEMPVAR_FLOAT_3 == 1 
+jf @TAMAI_28554 
+$TEMPVAR_FLOAT_1 = -3.0 
+$TEMPVAR_FLOAT_2 = 0.0 
+
+:TAMAI_28554
+if 
+  $TEMPVAR_FLOAT_3 == 2 
+jf @TAMAI_28592 
+$TEMPVAR_FLOAT_1 = 3.0 
+$TEMPVAR_FLOAT_2 = -3.0 
+
+:TAMAI_28592
+if 
+  $TEMPVAR_FLOAT_3 == 3 
+jf @TAMAI_28630 
+$TEMPVAR_FLOAT_1 = -3.0 
+$TEMPVAR_FLOAT_2 = -3.0 
+
+:TAMAI_28630
+Actor.StorePos(0@, 10@, 11@, 12@)
+005B: 10@ += $TEMPVAR_FLOAT_1 // (float) 
+005B: 11@ += $TEMPVAR_FLOAT_2 // (float) 
+gosub @TAMAI_28206 
+if 
+   not Actor.Dead(1@)
+jf @TAMAI_28719 
+0637: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 6 turn_radius 0.5 stop_radius 1.0 look_at_actor 1@ 
+jump @TAMAI_28785 
+
+:TAMAI_28719
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 2.0 16.0 1.0 
+06C2: AS_actor 0@ goto $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD mode 6 turn_radius 0.5 stop_radius 0.5 actor -1 with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+
+:TAMAI_28785
+cleo_return 0 
+
+:TAMAI_28790
+0470: 10@ = actor 0@ current_weapon 
+if and
+  10@ >= 33 
+   not 10@ > 38 
+jf @TAMAI_28911 
+if 
+   not Actor.HasWeapon(0@, 31)
+jf @TAMAI_28887 
+if 
+   not Model.Available(356)
+jf @TAMAI_28864 
+Model.Load(356)
+038B: load_requested_models 
+
+:TAMAI_28864
+Actor.GiveWeaponAndAmmo(0@, WeaponType.M4, 1)
+12@ = 100 
+jump @TAMAI_28895 
+
+:TAMAI_28887
+12@ = 200 
+
+:TAMAI_28895
+01B9: set_actor 0@ armed_weapon_to 31 
+return 
+jump @TAMAI_28911 
+
+:TAMAI_28911
+0470: 10@ = actor 0@ current_weapon 
+if or
+  10@ == 28 
+  10@ == 32 
+  10@ == 22 
+jf @TAMAI_29032 
+if 
+   not Actor.HasWeapon(0@, 31)
+jf @TAMAI_29015 
+if 
+   not Model.Available(356)
+jf @TAMAI_28992 
+Model.Load(356)
+038B: load_requested_models 
+
+:TAMAI_28992
+Actor.GiveWeaponAndAmmo(0@, WeaponType.M4, 1)
+12@ = 100 
+jump @TAMAI_29023 
+
+:TAMAI_29015
+12@ = 200 
+
+:TAMAI_29023
+01B9: set_actor 0@ armed_weapon_to 31 
+return 
+
+:TAMAI_29032
+return 
+
+:TAMAI_29034
+if or
+  12@ == 100 
+  12@ == 200 
+jf @TAMAI_29125 
+wait 0 
+gosub @TAMAI_21180 
+gosub @TAMAI_16584 
+gosub @TAMAI_32494 
+if 
+056D:   actor 0@ defined 
+jf @TAMAI_29125 
+if 
+   not Actor.Dead(0@)
+jf @TAMAI_29125 
+01B9: set_actor 0@ armed_weapon_to 10@ 
+
+:TAMAI_29125
+12@ = -7 
+return 
+
+:TAMAI_29134
+089F: get_actor 0@ pedtype_to $TEMPVAR_FLOAT_1 
+if or
+  3@ == -15 
+  3@ == -21 
+  $TEMPVAR_FLOAT_1 == 26 
+003B:   4@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_24523 
+if and
+056D:   actor 20@ defined 
+803B:   not  20@ == $PLAYER_ACTOR // (int) 
+jf @TAMAI_29258 
+if 
+   not Actor.Dead(20@)
+jf @TAMAI_29258 
+if 
+8104:   not actor $PLAYER_ACTOR near_actor 20@ radius 1.7 1.7 1.7 sphere 0 
+jf @TAMAI_24523 
+
+:TAMAI_29258
+10@ = 1 
+
+:TAMAI_29265
+0093: 12@ = integer 10@ to_float 
+if and
+   Actor.Stopped($PLAYER_ACTOR)
+   Actor.Stopped(0@)
+jf @TAMAI_29311 
+$TEMPVAR_ANGLE = 0.6 
+jump @TAMAI_29321 
+
+:TAMAI_29311
+$TEMPVAR_ANGLE = 1.2 
+
+:TAMAI_29321
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 12@ 0.0 
+if 
+80FE:   not actor $PLAYER_ACTOR sphere 0 in_sphere $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 radius $TEMPVAR_ANGLE $TEMPVAR_ANGLE 100.0 
+jf @TAMAI_24527 
+10@ += 1 
+  10@ > 60 
+jf @TAMAI_29265 
+jump @TAMAI_24523 
+
+:TAMAI_29414
+0889: store_actor 0@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+0889: store_actor 20@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset 0.0 0.0 0.5 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset -0.5 0.0 0.0 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset 0.5 0.0 0.0 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 0.0 0.92 
+0889: store_actor 20@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset 0.0 0.0 0.5 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset -0.5 0.0 0.0 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset 0.5 0.0 0.0 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+if 
+89ED:   not actor 0@ is_within_field_of_view_actor 20@ 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+
+:TAMAI_30013
+0889: store_actor 0@ center_of_body_position_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 
+if 
+86BD:   not no_obstacles_between $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+
+:TAMAI_30075
+0889: store_actor 0@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+0889: store_actor 0@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+0889: store_actor 20@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+
+:TAMAI_30261
+04C4: store_coords_to 7@ 8@ 9@ from_actor 20@ with_offset 0.0 0.0 1.0 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+0889: store_actor 20@ center_of_body_position_to 7@ 8@ 9@ 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 0 actor 0 object 0 particle 0 
+jf @TAMAI_24523 
+jump @TAMAI_24527 
+
+:TAMAI_30400
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_30506 
+jump @TAMAI_24523 
+
+:TAMAI_30506
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_30612 
+jump @TAMAI_24523 
+
+:TAMAI_30612
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 -1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_30718 
+jump @TAMAI_24523 
+
+:TAMAI_30718
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_30824 
+jump @TAMAI_24523 
+
+:TAMAI_30824
+jump @TAMAI_24527 
+
+:TAMAI_30831
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31235 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -25 3000 
+if 
+   not $TEMPVAR_FLOAT_1 >= 0 
+jf @TAMAI_31093 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31093 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset -1.5 0.0 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_31093
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31228 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 1.5 0.0 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_31228
+jump @TAMAI_24527 
+
+:TAMAI_31235
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31639 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -25 3000 
+if 
+   not $TEMPVAR_FLOAT_1 >= 0 
+jf @TAMAI_31497 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31497 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 0.0 1.5 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_31497
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -0.35 -1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.35 0.0 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31632 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 0.0 -1.5 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_31632
+jump @TAMAI_24527 
+
+:TAMAI_31639
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 -1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_32043 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -25 3000 
+if 
+   not $TEMPVAR_FLOAT_1 >= 0 
+jf @TAMAI_31901 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_31901 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset -1.5 0.0 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_31901
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_32036 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 1.5 0.0 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_32036
+jump @TAMAI_24527 
+
+:TAMAI_32043
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 1.5 0.35 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.0 -0.35 -0.35 
+if 
+86BD:   not no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_32447 
+0209: $TEMPVAR_FLOAT_1 = random_int_in_ranges -25 3000 
+if 
+   not $TEMPVAR_FLOAT_1 >= 0 
+jf @TAMAI_32305 
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset 0.35 1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset -0.35 0.0 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_32305 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 0.0 1.5 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_32305
+04C4: store_coords_to 7@ 8@ 9@ from_actor 0@ with_offset -0.35 -1.5 0.35 
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor 0@ with_offset 0.35 0.0 -0.35 
+if 
+06BD:   no_obstacles_between 7@ 8@ 9@ and $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 solid 1 car 1 actor 0 object 1 particle 0 
+jf @TAMAI_32440 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $421 from_actor 0@ with_offset 0.0 -1.5 0.0 
+jump @TAMAI_24523 
+
+:TAMAI_32440
+jump @TAMAI_24527 
+
+:TAMAI_32447
+jump @TAMAI_24527 
+
+:TAMAI_32454
+0470: $TEMPVAR_FLOAT_1 = actor 0@ current_weapon 
+if and
+  $TEMPVAR_FLOAT_1 > 18 
+   not $TEMPVAR_FLOAT_1 >= 39 
+jf @TAMAI_24527 
+jump @TAMAI_24523 
+
+:TAMAI_32494
+if 
+  5@ == -2 
+jf @TAMAI_33355 
+read_memory $TEMPVAR_X_COORD 9867536 2 1 
+if 
+04A4:   $TEMPVAR_X_COORD == 22580 // == constant 
+jf @TAMAI_32595 
+3@ = -1 
+20@ = -1 
+gosub @TAMAI_28206 
+03E5: show_text_box 'CFR_3' 
+wait 250 
+write_memory 9867536 4 0 1 
+
+:TAMAI_32595
+if 
+04A4:   $TEMPVAR_X_COORD == 22579 // == constant 
+jf @TAMAI_32741 
+gosub @TAMAI_28206 
+0208: $TEMPVAR_FLOAT_1 = random_float_in_ranges -1.0 1.0 
+0208: $TEMPVAR_FLOAT_2 = random_float_in_ranges 0.0 1.5 
+$TEMPVAR_FLOAT_1 *= 1.5 
+$TEMPVAR_FLOAT_2 *= 1.5 
+077E: get_active_interior_to $TEMPVAR_Z_COORD 
+0860: link_actor 0@ to_interior $TEMPVAR_Z_COORD 
+04C4: store_coords_to $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD from_actor $PLAYER_ACTOR with_offset $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 0.0 
+0972: put_actor 0@ at $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD no_offset 
+wait 250 
+write_memory 9867536 4 0 1 
+
+:TAMAI_32741
+if 
+04A4:   $TEMPVAR_X_COORD == 22581 // == constant 
+jf @TAMAI_33038 
+wait 250 
+write_memory 9867536 4 0 1 
+if 
+  18@ == 59 
+jf @TAMAI_32878 
+18@ = 0 
+TIMERB = 1000000 
+print_help_formatted "CLEVER NPCS: AI HAS STOPPED GOING TO TARGET POINT." 2766 
+jump @TAMAI_33038 
+
+:TAMAI_32878
+get_target_blip_coords $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+if and
+$TEMPVAR_X_COORD = 0.0 
+$TEMPVAR_X_COORD = 0 
+jf @TAMAI_32988 
+18@ = 59 
+TIMERB = 1000000 
+print_help_formatted "CLEVER NPCS: GO TO PLAYER TARGET POINT." 2766 
+jump @TAMAI_33038 
+
+:TAMAI_32988
+print_help_formatted "CLEVER NPCS: PLEASE SELECT A TARGET POINT." 2766 
+
+:TAMAI_33038
+if or
+04A4:   $TEMPVAR_X_COORD == 22578 // == constant 
+04A4:   $TEMPVAR_X_COORD == 22582 // == constant 
+jf @TAMAI_33345 
+if 
+   not Actor.Driving($PLAYER_ACTOR)
+jf @TAMAI_33167 
+if 
+get_char_player_is_targeting $TEMPVAR_X_COORD $PLAYER_CHAR 
+jf @TAMAI_33160 
+if 
+056D:   actor $TEMPVAR_X_COORD defined 
+jf @TAMAI_33153 
+089F: get_actor $TEMPVAR_X_COORD pedtype_to 3@ 
+03E5: show_text_box 'CFR_2' 
+wait 250 
+write_memory 9867536 4 0 1 
+
+:TAMAI_33153
+jump @TAMAI_33160 
+
+:TAMAI_33160
+jump @TAMAI_33345 
+
+:TAMAI_33167
+$TEMPVAR_Z_COORD = 0 
+
+:TAMAI_33174
+04C4: store_coords_to $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 from_actor $PLAYER_ACTOR with_offset 0.0 7.0 0.0 
+get_random_car_in_sphere_no_save_recursive $TEMPVAR_X_COORD $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 7.0 1 1 
+if 
+   not Car.Wrecked($TEMPVAR_X_COORD)
+jf @TAMAI_33324 
+if 
+   not Actor.InCar($PLAYER_ACTOR, $TEMPVAR_X_COORD)
+jf @TAMAI_33324 
+046C: $TEMPVAR_Y_COORD = car $TEMPVAR_X_COORD driver 
+if 
+   not $TEMPVAR_Y_COORD == -1 
+jf @TAMAI_33324 
+089F: get_actor $TEMPVAR_Y_COORD pedtype_to 3@ 
+03E5: show_text_box 'CFR_4' 
+wait 250 
+write_memory 9867536 4 0 1 
+
+:TAMAI_33324
+$TEMPVAR_Z_COORD += 1 
+  $TEMPVAR_Z_COORD > 20 
+jf @TAMAI_33174 
+
+:TAMAI_33345
+$TEMPVAR_X_COORD = 0.0 
+
+:TAMAI_33355
+return 
+gosub @TAMAI_439 
+gosub @TAMAI_512 
+jump @TAMAI_22414 
+
+:TAMAI_33378
+if 
+  0@ == 0 
+jf @TAMAI_34634 
+add_text_label "AIDEBUG" "AI.GETRETURN[(~1~), (~1~), (~1~), (~1~)]" 
+
+:TAMAI_33449
+wait 0 
+if 
+test_cheat "ADDF" 
+jf @TAMAI_33562 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 4 -15 $PLAYER_ACTOR 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_33562
+if 
+test_cheat "ADDE" 
+jf @TAMAI_33670 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 4 -10 -1 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_33670
+if 
+test_cheat "ADDP" 
+jf @TAMAI_33778 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 4 -20 -1 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_33778
+if 
+test_cheat "ADDSF" 
+jf @TAMAI_33887 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 1 -15 -1 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_33887
+if 
+test_cheat "ADDKF" 
+jf @TAMAI_33996 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 4 -15 -1 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_33996
+if 
+test_cheat "ADDT" 
+jf @TAMAI_34516 
+get_char_player_is_targeting $TEMPVAR_ACTOR_CAR $PLAYER_CHAR 
+if 
+   not $TEMPVAR_ACTOR_CAR == -1 
+jf @TAMAI_34516 
+10@ = -1 
+14@ = 0 
+
+:TAMAI_34055
+Actor.StorePos($PLAYER_ACTOR, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+get_random_car_in_sphere_no_save_recursive 16@ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 10000.0 1 1 
+if 
+056E:   car 16@ defined 
+jf @TAMAI_34284 
+if 
+   Car.Wrecked(10@)
+jf @TAMAI_34198 
+Actor.StorePos($PLAYER_ACTOR, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.StorePos(16@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+050A: 11@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+0085: 12@ = 11@ // (int) 
+0085: 10@ = 16@ // (int) 
+jump @TAMAI_34284 
+
+:TAMAI_34198
+Actor.StorePos($PLAYER_ACTOR, $TEMPVAR_X_COORD, $TEMPVAR_Y_COORD, $TEMPVAR_Z_COORD)
+Car.StorePos(16@, $TEMPVAR_FLOAT_1, $TEMPVAR_FLOAT_2, $TEMPVAR_FLOAT_3)
+050A: 11@ = distance_between_XYZ $TEMPVAR_FLOAT_1 $TEMPVAR_FLOAT_2 $TEMPVAR_FLOAT_3 and_XYZ $TEMPVAR_X_COORD $TEMPVAR_Y_COORD $TEMPVAR_Z_COORD 
+if 
+0025:   12@ > 11@ // (float) 
+jf @TAMAI_34284 
+0085: 12@ = 11@ // (int) 
+0085: 10@ = 16@ // (int) 
+
+:TAMAI_34284
+14@ += 1 
+  14@ > 200 
+jf @TAMAI_34055 
+if 
+   not Car.Wrecked(10@)
+jf @TAMAI_34388 
+0792: disembark_instantly_actor $TEMPVAR_ACTOR_CAR 
+072A: put_actor $TEMPVAR_ACTOR_CAR into_car 10@ driverseat 
+print_help_formatted "CHEAT ACTIVATED: ~N~PUT INTO NEAREST CAR." 
+jump @TAMAI_34435 
+
+:TAMAI_34388
+print_help_formatted "ERROR: ~N~THERE ISN'T ANY CAR AROUND YOU ." 
+
+:TAMAI_34435
+cleo_call @TAMAI_34692 7 -34671 $TEMPVAR_ACTOR_CAR 0 4 -20 -1 0 
+print_help_formatted "AI SYSTEM: AN AI SCRIPT HAS ADDED AT YOUR TARGET" 
+
+:TAMAI_34516
+if 
+test_cheat "AIAB" 
+jf @TAMAI_34627 
+print_help_formatted "AI SCRIPT:~N~SCRIPT BY TAMCL~N~NEWTAMCL(A)FOXMAIL.COM~N~~Y~CURRENT VERSION: BETA 0.9" 2766 
+
+:TAMAI_34627
+jump @TAMAI_33449 
+
+:TAMAI_34634
+cleo_call @TAMAI_34692 7 -34671 0@ 1@ 2@ 3@ 4@ 5@ 
+terminate_this_custom_script 
+terminate_this_script 
+gosub @TAMAI_439 
+gosub @TAMAI_512 
+jump @TAMAI_22414 
+
+:TAMAI_34692
+get_this_script_struct TIMERA 
+TIMERA += 16 
+read_memory TIMERA TIMERA 4 0 
+0062: TIMERA -= 0@ // (int) 
+call_function_return 4607008 1 1 TIMERA TIMERB 
+005A: TIMERA += 0@ // (int) 
+TIMERB += 16 
+write_memory TIMERB 4 TIMERA 0 
+TIMERB += 183 
+write_memory TIMERB 1 1 0 
+TIMERB += 2 
+write_memory TIMERB 1 1 0 
+TIMERB -= 141 
+TIMERA = 0 
+
+:TAMAI_34821
+write_memory TIMERB 4 1@(32@,1i) 0 
+TIMERB += 4 
+TIMERA += 1 
+  TIMERA > 30 
+jf @TAMAI_34821 
+cleo_return 0 
