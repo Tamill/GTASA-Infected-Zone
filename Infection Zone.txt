@@ -25,16 +25,11 @@ DEFINE UNKNOWN_THREADS_MEMORY 2048
 0000:
 
 goto @scirpt_add_main_start
-
-0662: printstring "GTA Biohazard-Strike MAIN SCRIPT" 
 0662: printstring "THE SCRIPT CREATED BY TAMIL" 
-0662: printstring "You don't have PERMISSION to Copy anything from the script!" 
 0662: printstring "Contacting me with QQ: 1298878474 or email: newtamcl@foxmail.com" 
-0662: printstring "SCM Engine  by Tamil" 
 0662: printstring "GTA Biohazard-Strike MAIN SCRIPT" 
  
 0662: printstring "Mod开发： TAMIL(TAMCL)"
-0662: printstring "请尊重作者，未经允许禁止进行修改并二次发布。违者必究。"
 0662: printstring "电子邮件: newtamcl@foxmail.com" 
 0662: printstring "SCM引擎与AIAPI  by Tamil(Tamcl)"
  
